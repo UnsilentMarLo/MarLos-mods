@@ -93,7 +93,7 @@ MK51 = Class(CSubUnit) {
     OnCreate = function(self)
         CSubUnit.OnCreate(self)
         self.OpenAnimManips = {}
-        self.OpenAnimManips[1] = CreateAnimator(self):PlayAnim('/Mods/#Marlos mods compilation/units/MK51 - Cybran Dreadnought/MK51_aopen.sca'):SetRate(-1)
+        self.OpenAnimManips[1] = CreateAnimator(self):PlayAnim('/Mods/#Marlos mods compilation/units/MK51/MK51_aopen.sca'):SetRate(-1)
         for k, v in self.OpenAnimManips do
             self.Trash:Add(v)
         end
@@ -111,7 +111,7 @@ MK51 = Class(CSubUnit) {
             end
         end
     end,
-
+	
     OnMotionVertEventChange = function( self, new, old )
         CSubUnit.OnMotionVertEventChange(self, new, old)
         if new == 'Down' then
@@ -122,7 +122,12 @@ MK51 = Class(CSubUnit) {
     end,
 	
     OnStopBeingBuilt = function(self, builder, layer)
+        --- Unless we're gifted, we should have an original builder.
+        --- Remains to be seen if this property is actually copied during gift
         CSubUnit.OnStopBeingBuilt(self,builder,layer)
+        if self.originalBuilder then
+            IssueDive({self})
+        end
         if(self:GetCurrentLayer() == 'Water') then
 			# Enable weapon
 			self:SetWeaponEnabledByLabel('FrontCannon01', true)

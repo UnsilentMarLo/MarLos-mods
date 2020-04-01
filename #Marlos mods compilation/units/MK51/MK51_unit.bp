@@ -268,7 +268,7 @@ UnitBlueprint {
             LAYER_Orbit = false,
             LAYER_Seabed = false,
             LAYER_Sub = true,
-            LAYER_Water = false,
+            LAYER_Water = true,
         },
         CatchUpAcc = 10,
         DragCoefficient = 0.2,

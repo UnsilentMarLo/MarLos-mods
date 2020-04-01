@@ -309,7 +309,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 2000,
+            Damage = 1000,
             DamageRadius = 3,
             DamageType = 'Normal',
             DisplayName = 'Disintegrator Pulse Laser',
@@ -460,7 +460,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 8,
             MuzzleVelocity = 40,
             ProjectileId = '/projectiles/CANTorpedoNanite01/CANTorpedoNanite01_proj.bp',
-            ProjectileLifetime = 12,
+            ProjectileLifetime = 3,
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
