@@ -654,7 +654,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_IndirectFire',
-            RateOfFire = 0.5,
+            RateOfFire = 0.005,
             SlavedToBody = true,
             SlavedToBodyArcRange = 2,
             SalvoSize = 1,

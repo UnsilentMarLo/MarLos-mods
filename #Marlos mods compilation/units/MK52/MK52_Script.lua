@@ -47,7 +47,7 @@ MK52 = Class(TSeaUnit) {
         SpecialMissileRack01 = Class(TSAMLauncher) {
             RackSalvoFireReadyState = State(TSAMLauncher.RackSalvoFireReadyState) {
                 Main = function(self)
-                    local MuzzleSalvoSize = self:GetBlueprint().MuzzleSalvoSize or 80
+                    local MuzzleSalvoSize = 80
                     if self.unit:GetTacticalSiloAmmoCount() < MuzzleSalvoSize then
                         self:ForkThread(
                             function(self)
