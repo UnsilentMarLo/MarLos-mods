@@ -49,11 +49,11 @@ XSS0201 = Class(SSubUnit) {
         end
 		
         local wep3 = self:GetWeaponByLabel('Turret_03')
-        local bp1 = wep3:GetBlueprint()
-        if bp1.Audio.BeamStop then
-            wep3:PlaySound(bp1.Audio.BeamStop)
+        local bp3 = wep3:GetBlueprint()
+        if bp3.Audio.BeamStop then
+            wep3:PlaySound(bp3.Audio.BeamStop)
         end
-        if bp1.Audio.BeamLoop and wep3.Beams[1].Beam then
+        if bp3.Audio.BeamLoop and wep3.Beams[1].Beam then
             wep3.Beams[1].Beam:SetAmbientSound(nil, nil)
         end
         for k, v in wep3.Beams do
@@ -61,11 +61,11 @@ XSS0201 = Class(SSubUnit) {
         end
 
         local wep4 = self:GetWeaponByLabel('Turret_04')
-        local bp2 = wep4:GetBlueprint()
-        if bp2.Audio.BeamStop then
-            wep4:PlaySound(bp2.Audio.BeamStop)
+        local bp4 = wep4:GetBlueprint()
+        if bp4.Audio.BeamStop then
+            wep4:PlaySound(bp4.Audio.BeamStop)
         end
-        if bp2.Audio.BeamLoop and wep4.Beams[1].Beam then
+        if bp4.Audio.BeamLoop and wep4.Beams[1].Beam then
             wep4.Beams[1].Beam:SetAmbientSound(nil, nil)
         end
         for k, v in wep4.Beams do
