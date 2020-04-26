@@ -112,7 +112,7 @@ UnitBlueprint {
             '<LOC ability_torpedodef>Torpedo Defense',
             'Tactical Bombardement',
         },
-        AnimationOpen = '/Mods/#Marlos mods compilation/units/MK52/MK52_Aactivate.sca',
+        AnimationOpen = '/Mods/#Marlos mods compilation/units/MK52/MK52_aopen.sca',
         IdleEffects = {
             Water = {
                 Effects = {

@@ -4,10 +4,10 @@
 -- Copyright © 2005 Gas Powered Games, Inc.  All rights reserved. --
 --------------------------------------------------------------------
 UnitList = {
-     T3ArmoredAssault = {
-         UEF = {'pz06', 60}, -- Pz. VI Tiger (Super Heavy Tank) 
-     },
      T2LandDFTank = {
          UEF = {'mk18', 40}, -- Pillar/85 (Heavy Tank Destroyer) 
+     },
+     T3SeaBattleship = {
+         UEF = {'mk56', 50}, -- H-48 Olympus Class (Battlecarrier) 
      },
 }

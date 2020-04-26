@@ -69,7 +69,7 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_upgradable>Upgradeable',
         },
-        AnimationUpgrade = '/Mods/#Marlos mods compilation/MK36 - Medium Tank/MK36_Aupgrade.sca',
+        AnimationUpgrade = '/Mods/#Marlos mods compilation/MK36/MK36_Aupgrade.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {

@@ -100,7 +100,6 @@ UnitBlueprint {
 		'GROUNDATTACK',
         'TECH1',
         'GROUNDATTACK',
-        'TRANSPORTATION',
         'VISIBLETORECON',
         'RECLAIMABLE',
         'OVERLAYDIRECTFIRE',

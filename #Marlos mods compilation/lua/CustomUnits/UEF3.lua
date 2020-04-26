@@ -16,4 +16,7 @@ UnitList = {
      T3LandAA = {
          UEF = {'mk42', 60}, -- Artemis (Mobile Heavy Antiair) 
      },
+     T3SeaBattleship = {
+         UEF = {'mk46', 50}, -- Iwojima Class (Heavy Destroyer) 
+     },
 }
