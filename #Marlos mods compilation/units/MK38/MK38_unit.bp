@@ -67,7 +67,6 @@ UnitBlueprint {
         'AMPHIBIOUS',
         'HOVER',
         'EXPERIMENTAL',
-        'NEEDMOBILEBUILD',
 		'ANTIAIR',
 		'ANTINAVY',
         'VISIBLETORECON',
@@ -669,11 +668,12 @@ UnitBlueprint {
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',
                 Air = 'Land|Water|Seabed',
+                Water = 'Land|Water|Seabed',
             },
             FiringTolerance = 5,
             Label = 'CruiseMissile',
             MaxRadius = 38,
-            MinRadius = 15,
+            MinRadius = 7,
             MuzzleChargeDelay = 0,
             MuzzleSalvoDelay = 0.05,
             MuzzleSalvoSize = 1,
@@ -684,20 +684,34 @@ UnitBlueprint {
             RackBones = {
                 {
                     MuzzleBones = {
-                        'Projectile_Front_Left_01',
                         'Projectile_Front_Right_01',
-                        'Projectile_Front_Left_02',
-                        'Projectile_Front_Right_02',
-                        'Projectile_Front_Left_03',
-                        'Projectile_Front_Right_03',
-                        'Projectile_Front_Left_04',
-                        'Projectile_Front_Right_04',
-                        'Projectile_Front_Left_05',
-                        'Projectile_Front_Right_05',
-                        'Projectile_Front_Left_06',
-                        'Projectile_Front_Right_06',
+                    },
+                    RackBone = 'Projectile_Front_Right_01',
+                },                {
+                    MuzzleBones = {
+                        'Projectile_Front_Left_01',
                     },
                     RackBone = 'Projectile_Front_Left_01',
+                },                {
+                    MuzzleBones = {
+                        'Projectile_Front_Left_02',
+                    },
+                    RackBone = 'Projectile_Front_Left_02',
+                },                {
+                    MuzzleBones = {
+                        'Projectile_Front_Right_02',
+                    },
+                    RackBone = 'Projectile_Front_Right_02',
+                },                {
+                    MuzzleBones = {
+                        'Projectile_Front_Left_03',
+                    },
+                    RackBone = 'Projectile_Front_Left_03',
+                },                {
+                    MuzzleBones = {
+                        'Projectile_Front_Right_03',
+                    },
+                    RackBone = 'Projectile_Front_Right_03',
                 },
             },
             RackFireTogether = false,
