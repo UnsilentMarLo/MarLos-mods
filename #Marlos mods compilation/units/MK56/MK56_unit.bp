@@ -1,5 +1,10 @@
 UnitBlueprint {
     AI = {
+        RefuelingMultiplier = 140,
+        RefuelingRepairAmount = 1200,
+        RepairConsumeEnergy = 5,
+        RepairConsumeMass = 0.5,
+        StagingPlatformScanRadius = 300,
         AttackAngle = 90,
         GuardReturnRadius = 130,
         TargetBones = {
@@ -64,6 +69,13 @@ UnitBlueprint {
         'ANTIMISSILE',
         'VISIBLETORECON',
         'RECLAIMABLE',
+        'REPAIR',
+        'AIRSTAGINGPLATFORM',
+        'CARRIER',
+        'NEEDMOBILEBUILD',
+        'FACTORY',
+        'NAVALCARRIER',
+        'SHOWQUEUE',
         'SHOWATTACKRETICLE',
         'BATTLESHIP',
         'OVERLAYANTIAIR',
@@ -89,7 +101,17 @@ UnitBlueprint {
             '<LOC ability_aa>Anti-Air',
             '<LOC ability_radar>Radar',
             '<LOC ability_sonar>Sonar',
+            '<LOC ability_carrier>Carrier',
+            '<LOC ability_factory>Factory',
         },
+        -- AnimationDeath = {
+            -- {
+                -- Animation = '/Mods/#Marlos mods compilation/units/MK56/MK56_Asink.sca',
+                -- AnimationRateMax = 0.1,
+                -- AnimationRateMin = 0.1,
+                -- Weight = 100,
+            -- },
+        -- },
         IdleEffects = {
             Water = {
                 Effects = {
@@ -146,7 +168,11 @@ UnitBlueprint {
     Economy = {
         BuildCostEnergy = 144000,
         BuildCostMass = 22000,
+        BuildRate = 480,
         BuildTime = 33000,
+        BuildableCategory = {
+            'BUILTBYTIER3FACTORY UEF MOBILE AIR',
+        },
     },
     Footprint = {
         SizeX = 5,
@@ -167,10 +193,17 @@ UnitBlueprint {
             RULEUCC_Repair = false,
             RULEUCC_RetaliateToggle = true,
             RULEUCC_Stop = true,
-            RULEUCC_Transport = false,
+            RULEUCC_Transport = true,
         },
+        ConstructionBar = true,
         FactionName = 'UEF',
         Icon = 'sea',
+        OrderOverrides = {
+            RULEUCC_Transport = {
+                bitmapId = 'deploy',
+                helpText = 'deploy',
+            },
+        },
         TechLevel = 'RULEUTL_Secret',
         UnitName = 'H-48 Olympus Class',
         UnitWeight = 1,
@@ -226,6 +259,11 @@ UnitBlueprint {
     SizeZ = 21,
     StrategicIconName = 'icon_ship3_directfire',
     StrategicIconSortPriority = 145,
+    Transport = {
+        ClassGenericUpTo = 2,
+        StorageSlots = 350,
+        TransportClass = 10,
+    },
     Veteran = {
         Level1 = 32,
         Level2 = 64,
