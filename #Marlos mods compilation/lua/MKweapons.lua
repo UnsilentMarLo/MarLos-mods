@@ -50,3 +50,26 @@ DreadnoughtLaser = Class(DefaultBeamWeapon) {
         end
     end,
 }
+
+ColossusLaser = Class(DefaultBeamWeapon) {
+    BeamType = MKCollisionBeamFile.ColossusLaserCollisionBeam,
+    FxMuzzleFlash = {},
+    FxChargeMuzzleFlash = {},
+    FxUpackingChargeEffects = EffectTemplate.CMicrowaveLaserCharge01,
+    FxUpackingChargeEffectScale = 2,
+
+    PlayFxWeaponUnpackSequence = function(self)
+        if not self.ContBeamOn then
+            local army = self.unit:GetArmy()
+            local bp = self:GetBlueprint()
+            for k, v in self.FxUpackingChargeEffects do
+                for ek, ev in bp.RackBones[self.CurrentRackSalvoNumber].MuzzleBones do
+                    CreateAttachedEmitter(self.unit, ev, army, v):ScaleEmitter(self.FxUpackingChargeEffectScale):ScaleEmitter(2)
+
+                end
+				
+            end
+            DefaultBeamWeapon.PlayFxWeaponUnpackSequence(self)
+        end
+    end,
+}

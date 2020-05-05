@@ -11,7 +11,17 @@ TableCat = import('/lua/utilities.lua').TableCat
 EmtBpPath = '/Mods/#Marlos mods compilation/effects/emitters/'
 EmitterTempEmtBpPath = '/Mods/#Marlos mods compilation/effects/emitters/temp/'
 
+AColossusLaserImpact01 = {
+    EmtBpPath .. 'phason_laser_end_01_emit.bp',
+    EmtBpPath .. 'phason_laser_end_02_emit.bp', 
+    EmtBpPath .. 'Nuclear_Laser_ring_02_emit.bp',	##	ring11   
+}
 
+AColossusLaserMuzzle01 = {
+    EmtBpPath .. 'phason_laser_muzzle_01_emit.bp',
+    EmtBpPath .. 'phason_laser_muzzle_02_emit.bp',
+    EmtBpPath .. 'microwave_laser_charge_02_emit.bp',    
+}
 
 MARVArtilleryWeaponFX = {
     EmtBpPath .. 'MARV_artillery_muzzle_01_emit.bp',
