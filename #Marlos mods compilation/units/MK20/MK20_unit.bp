@@ -136,7 +136,7 @@ UnitBlueprint {
         },
         SurfaceThreatLevel = 380,
     },
-    Description = '<LOC MK20_desc>Experimental Gunship',
+    Description = 'Experimental Gunship',
     Display = {
         Abilities = {
             '<LOC ability_airstaging>Air Staging',
@@ -208,8 +208,8 @@ UnitBlueprint {
     },
     Footprint = {
         MaxSlope = 0.25,
-        SizeX = 4,
-        SizeZ = 5,
+        SizeX = 6,
+        SizeZ = 6,
     },
     General = {
         Category = 'Gunship',
@@ -248,7 +248,7 @@ UnitBlueprint {
         VisionRadius = 42,
     },
     Interface = {
-        HelpText = '<LOC MK20_help>Experimental Siege Airship',
+        HelpText = 'Experimental Siege Gunship',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 4.35,
