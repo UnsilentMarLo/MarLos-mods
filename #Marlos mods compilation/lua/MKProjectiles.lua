@@ -77,3 +77,42 @@ TFragmentationGrenadeMK02 = Class(EmitterProjectile) {
     FxTrails= EffectTemplate.THeavyFragmentationGrenadeFxTrails,
     #PolyTrail= EffectTemplate.THeavyFragmentationGrenadePolyTrail,
 }
+
+CHeavyLaserProjectileMK = Class(MultiPolyTrailProjectile) {
+    PolyTrails = {
+        '/Mods/#Marlos mods compilation/effects/emitters/cybran_laser_trail_MK_emit.bp',
+        '/Mods/#Marlos mods compilation/effects/emitters/default_polytrail_MK_emit.bp',
+    },
+    PolyTrailOffset = {0,0},
+
+    # Hit Effects
+    FxImpactUnit = EffectTemplate.AMissileHit01,
+    FxImpactProp = EffectTemplate.AMissileHit01,
+    FxImpactLand = EffectTemplate.AMissileHit01,
+    FxImpactUnderWater = {},
+}
+
+CHeavyLaserProjectileMK2 = Class(MultiPolyTrailProjectile) {
+    PolyTrails = {
+        '/Mods/#Marlos mods compilation/effects/emitters/cybran_laser_trail_MK2_emit.bp',
+        '/Mods/#Marlos mods compilation/effects/emitters/default_polytrail_MK2_emit.bp',
+    },
+    PolyTrailOffset = {0,0},
+
+    # Hit Effects
+    FxImpactUnit = EffectTemplate.AMissileHit01,
+    FxImpactProp = EffectTemplate.AMissileHit01,
+    FxImpactLand = EffectTemplate.AMissileHit01,
+    FxImpactUnderWater = {},
+}
+
+AMissileAAProjectileMK = Class(SinglePolyTrailProjectile) {
+    PolyTrail = '/effects/emitters/aeon_missile_trail_01_emit.bp',
+
+    FxImpactUnit = EffectTemplate.AMissileHit01,
+    FxImpactAirUnit = EffectTemplate.AMissileHit01,
+    FxImpactProp = EffectTemplate.AMissileHit01,
+    FxImpactNone = EffectTemplate.AMissileHit01,
+    FxImpactLand = EffectTemplate.AMissileHit01,
+    FxImpactUnderWater = {},
+}
