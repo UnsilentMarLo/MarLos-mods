@@ -204,7 +204,7 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    LODCutoff = 200,
+                    LODCutoff = 400,
                     Scrolling = true,
                     ShaderName = 'Insect',
                 },
@@ -278,7 +278,6 @@ UnitBlueprint {
                 },
             },
         },
-        PlaceholderMeshName = 'UXB0000',
         SpawnRandomRotation = true,
         UniformScale = 0.22,
     },

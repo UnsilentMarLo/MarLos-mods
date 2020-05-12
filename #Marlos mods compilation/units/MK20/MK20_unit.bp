@@ -1,13 +1,11 @@
 UnitBlueprint {
     AI = {
-        AttackAngle = 0,
         GuardScanRadius = 35,
         TargetBones = {
             'Projectile1',
             'Projectile3',
             'MK55',
         },
-		
     },
     Air = {
         AutoLandTime = 1,
@@ -241,7 +239,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ShieldToggle = true,
         },
-        UnitName = '<LOC MK20_name>Airboy',
+        UnitName = 'Airboy',
         UnitWeight = 1,
     },
     Intel = {
@@ -301,6 +299,7 @@ UnitBlueprint {
                     LodCutoff = 'Weapon_LodCutoff',
                 },
             },
+            AutoInitiateAttackCommand = true,
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
             Damage = 250,
@@ -312,8 +311,6 @@ UnitBlueprint {
             },
             FiringRandomness = 2,
             FiringTolerance = 2,
-            HeadingArcCenter = 75,
-            HeadingArcRange = 120,
             Label = 'RightTurret01',
             MaxRadius = 28,
             MuzzleSalvoDelay = 0,

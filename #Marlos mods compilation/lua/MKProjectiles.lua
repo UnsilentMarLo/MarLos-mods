@@ -106,6 +106,20 @@ CHeavyLaserProjectileMK2 = Class(MultiPolyTrailProjectile) {
     FxImpactUnderWater = {},
 }
 
+CHeavyLaserProjectileMK3 = Class(MultiPolyTrailProjectile) {
+    PolyTrails = {
+        '/Mods/#Marlos mods compilation/effects/emitters/cybran_laser_trail_MK3.bp',
+        '/Mods/#Marlos mods compilation/effects/emitters/default_polytrail_MK3.bp',
+    },
+    PolyTrailOffset = {0,0},
+
+    # Hit Effects
+    FxImpactUnit = EffectTemplate.AMissileHit01,
+    FxImpactProp = EffectTemplate.AMissileHit01,
+    FxImpactLand = EffectTemplate.AMissileHit01,
+    FxImpactUnderWater = {},
+}
+
 AMissileAAProjectileMK = Class(SinglePolyTrailProjectile) {
     PolyTrail = '/effects/emitters/aeon_missile_trail_01_emit.bp',
 
