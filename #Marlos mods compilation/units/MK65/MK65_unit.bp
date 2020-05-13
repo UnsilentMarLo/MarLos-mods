@@ -279,7 +279,7 @@ UnitBlueprint {
             },
         },
         SpawnRandomRotation = true,
-        UniformScale = 0.22,
+        UniformScale = 0.23,
     },
     Economy = {
         BuildCostEnergy = 350000,
