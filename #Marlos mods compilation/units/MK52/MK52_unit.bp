@@ -357,6 +357,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 2,
             WeaponUnpacks = true,
+            NotExclusive = true,
         },
         {
             Audio = {
@@ -435,6 +436,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 2,
             WeaponUnpacks = true,
+            NotExclusive = true,
         },
         {
             Audio = {
@@ -513,6 +515,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 2,
             WeaponUnpacks = true,
+            NotExclusive = true,
         },
         {
             Audio = {
@@ -591,6 +594,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 2,
             WeaponUnpacks = true,
+            NotExclusive = true,
         },
 	---------------------------------------------------------------
 	-------------------------Special Weapon------------------------
@@ -686,6 +690,7 @@ UnitBlueprint {
             WeaponUnpackAnimation = '/Mods/#Marlos mods compilation/units/MK52/MK52_aopen.sca',
             WeaponUnpackAnimationRate = 0.5,
             WeaponUnpacks = true,
+            NotExclusive = true,
         },
 	---------------------------------------------------------------
 	-------------------------Front Turrets-------------------------
@@ -759,6 +764,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AboveWaterFireOnly = true,
@@ -829,6 +835,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 	---------------------------------------------------------------
 	-------------------------Back Turrets--------------------------
@@ -902,6 +909,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AboveWaterFireOnly = true,
@@ -972,6 +980,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 	---------------------------------------------------------------
 	-------------------------Light AA Turrets----------------------
@@ -1051,6 +1060,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AlwaysRecheckTarget = true,
@@ -1127,6 +1137,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AlwaysRecheckTarget = true,
@@ -1203,6 +1214,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AlwaysRecheckTarget = true,
@@ -1279,6 +1291,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 --------- Back Sam Launchers
         {
@@ -1356,6 +1369,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AlwaysRecheckTarget = true,
@@ -1432,6 +1446,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 	---------------------------------------------------------------
 	-------------------------Torp Rockets--------------------------
@@ -1504,6 +1519,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Navy',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         }, 
 		{
             Audio = {
@@ -1573,6 +1589,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Navy',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 	---------------------------------------------------------------
 	-------------------------TorpDF Rockets------------------------
@@ -1642,6 +1659,7 @@ UnitBlueprint {
             WeaponCategory = 'Defense',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 	---------------------------------------------------------------
 	-------------------------TMD Turrets---------------------------
@@ -1707,6 +1725,7 @@ UnitBlueprint {
             TurretYawSpeed = 720,
             Turreted = true,
             WeaponCategory = 'Defense',
+            NotExclusive = true,
         },
         {
             Audio = {
@@ -1768,6 +1787,7 @@ UnitBlueprint {
             TurretYawSpeed = 720,
             Turreted = true,
             WeaponCategory = 'Defense',
+            NotExclusive = true,
         },
 -------------- Back
         {
@@ -1830,6 +1850,7 @@ UnitBlueprint {
             TurretYawSpeed = 720,
             Turreted = true,
             WeaponCategory = 'Defense',
+            NotExclusive = true,
         },
         {
             Audio = {
@@ -1891,6 +1912,7 @@ UnitBlueprint {
             TurretYawSpeed = 720,
             Turreted = true,
             WeaponCategory = 'Defense',
+            NotExclusive = true,
         },
     },
 }

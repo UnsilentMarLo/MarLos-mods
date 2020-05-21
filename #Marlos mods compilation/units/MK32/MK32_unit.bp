@@ -1,6 +1,6 @@
 UnitBlueprint {
     AI = {
-        AttackAngle = 60,
+        AttackAngle = 90,
         GuardReturnRadius = 130,
         TargetBones = {
             'MK32',

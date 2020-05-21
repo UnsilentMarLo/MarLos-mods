@@ -272,6 +272,7 @@ UnitBlueprint {
         },
         CatchUpAcc = 10,
         DragCoefficient = 0.2,
+        DiveSurfaceSpeed = 3,
         Elevation = -3.5,
         MaxAcceleration = 3,
         MaxBrake = 6,

@@ -368,6 +368,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AboveWaterTargetsOnly = true,
@@ -433,6 +434,7 @@ UnitBlueprint {
             TurretYawSpeed = 60,
             Turreted = true,
             WeaponCategory = 'Direct Fire',
+            NotExclusive = true,
         },
 		
 		-- Torpedo Weapon
@@ -504,6 +506,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Navy',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
     },
     Wreckage = {

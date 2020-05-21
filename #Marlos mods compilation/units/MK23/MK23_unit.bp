@@ -279,6 +279,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AboveWaterTargetsOnly = true,
@@ -344,6 +345,7 @@ UnitBlueprint {
             TurretYawSpeed = 60,
             Turreted = true,
             WeaponCategory = 'Direct Fire',
+            NotExclusive = true,
         },
     },
     Wreckage = {

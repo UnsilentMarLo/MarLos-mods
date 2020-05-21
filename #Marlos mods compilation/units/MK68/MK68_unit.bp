@@ -408,6 +408,7 @@ UnitBlueprint {
             TurretYawSpeed = 90,
             Turreted = true,
             WeaponCategory = 'Direct Fire',
+            NotExclusive = true,
         },
         {
             AboveWaterTargetsOnly = true,
@@ -477,6 +478,7 @@ UnitBlueprint {
             TurretYawSpeed = 90,
             Turreted = true,
             WeaponCategory = 'Direct Fire',
+            NotExclusive = true,
         },
 		
 		-- even lighter lasers --
@@ -547,6 +549,7 @@ UnitBlueprint {
             Turreted = true,
             UseFiringSolutionInsteadOfAimBone = true,
             WeaponCategory = 'Direct Fire',
+            NotExclusive = true,
         },
         {
             AboveWaterTargetsOnly = true,
@@ -614,6 +617,7 @@ UnitBlueprint {
             Turreted = true,
             UseFiringSolutionInsteadOfAimBone = true,
             WeaponCategory = 'Direct Fire',
+            NotExclusive = true,
         },
 		
 		-- AA Weapons --
@@ -691,6 +695,7 @@ UnitBlueprint {
             TurretYawSpeed = 30,
             Turreted = false,
             WeaponCategory = 'Anti Air',
+            NotExclusive = true,
         },
         {
             AlwaysRecheckTarget = true,
@@ -765,6 +770,7 @@ UnitBlueprint {
             TurretYawSpeed = 30,
             Turreted = false,
             WeaponCategory = 'Anti Air',
+            NotExclusive = true,
         },
         {
             AboveWaterTargetsOnly = true,

@@ -68,3 +68,10 @@ THeavyFragmentationGrenadeHitMK = {
     EmtBpPath .. 'terran_fragmentation_grenade_hit_MK_07_emit.bp',
     EmtBpPath .. 'terran_fragmentation_grenade_hit_MK_08_emit.bp',
 }
+
+MKMissileHit02a = {
+    EmtBpPath .. 'MK_iridium_hit_unit_01_emit.bp',
+    EmtBpPath .. 'MK_iridium_hit_land_01_emit.bp',
+    EmtBpPath .. 'MK_iridium_hit_land_02_emit.bp',
+    EmtBpPath .. 'MK_iridium_hit_ring_01_emit.bp',
+}

@@ -336,6 +336,7 @@ UnitBlueprint {
             WeaponCategory = 'Indirect Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 	
 			----------			  --------------------------------
@@ -412,6 +413,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 			---------- Left --------------------------------------
         {
@@ -485,6 +487,7 @@ UnitBlueprint {
             WeaponCategory = 'Direct Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 		
 			----------			----------------------------------
@@ -589,6 +592,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 		
 			---------- 2 --------------------------------------
@@ -691,6 +695,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 		
 			---------- 3 --------------------------------------
@@ -793,6 +798,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 		
 			---------- 4 --------------------------------------
@@ -895,6 +901,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 		
 			----------			----------------------------------
@@ -987,6 +994,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 		
 			---------- 2 --------------------------------------
@@ -1077,6 +1085,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
     },
     Wreckage = {

@@ -364,6 +364,7 @@ UnitBlueprint {
             WeaponCategory = 'Indirect Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AboveWaterFireOnly = true,
@@ -441,13 +442,13 @@ UnitBlueprint {
             WeaponCategory = 'Indirect Fire',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 		
 	
 	----								----
 	----			HeavyMinigun			----
 	----								----
-	
         {
             AboveWaterTargetsOnly = true,
             Audio = {
@@ -520,6 +521,7 @@ UnitBlueprint {
             TurretYawSpeed = 35,
             Turreted = true,
             WeaponCategory = 'Direct Fire',
+            NotExclusive = true,
         },
 	----								----
 	----		GrenadeLauncher			----
@@ -597,6 +599,7 @@ UnitBlueprint {
             TurretYawSpeed = 40,
             Turreted = true,
             WeaponCategory = 'Direct Fire',
+            NotExclusive = true,
         },	
 		
         {
@@ -671,6 +674,7 @@ UnitBlueprint {
             TurretYawSpeed = 40,
             Turreted = true,
             WeaponCategory = 'Direct Fire',
+            NotExclusive = true,
         },
 		
 	----								----
@@ -754,6 +758,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AlwaysRecheckTarget = true,
@@ -832,6 +837,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 
 
@@ -913,6 +919,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
         {
             AlwaysRecheckTarget = true,
@@ -991,6 +998,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 		
 	----								----
@@ -1062,6 +1070,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Navy',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
 	
 	----								----
