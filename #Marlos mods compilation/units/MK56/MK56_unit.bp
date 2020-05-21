@@ -72,9 +72,7 @@ UnitBlueprint {
         'REPAIR',
         'AIRSTAGINGPLATFORM',
         'CARRIER',
-        'NEEDMOBILEBUILD',
         'FACTORY',
-        'NAVALCARRIER',
         'SHOWQUEUE',
         'SHOWATTACKRETICLE',
         'BATTLESHIP',
@@ -133,6 +131,13 @@ UnitBlueprint {
                     ShaderName = 'Unit',
                 },
             },
+        },
+        MotionAdjustment = {
+            Sliderlanding = 0.5,
+            Sliderstatic = -8,
+            Yoffsetinmotion = 0.5,
+            Yoffsetlanding = -5,
+            slideinmotion = 0.5,
         },
         MovementEffects = {
             Water = {

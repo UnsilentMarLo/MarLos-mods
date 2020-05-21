@@ -378,9 +378,9 @@ UnitBlueprint {
             TurretYawSpeed = 30,
             Turreted = true,
             UseFiringSolutionInsteadOfAimBone = true,
-            WeaponRepackTimeout = 5,
+            WeaponRepackTimeout = 0.1,
             WeaponUnpackAnimation = '/Mods/#Marlos mods compilation/units/MK67/MK67_AUnpack.sca',
-            WeaponUnpackAnimationRate = 0.5,
+            WeaponUnpackAnimationRate = 3,
             WeaponUnpacks = true,
         },
         {
