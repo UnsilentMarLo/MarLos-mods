@@ -12,17 +12,17 @@ local RandomFloat = import('/lua/utilities.lua').GetRandomFloat
 
 MKDFRocketIridium = Class(MKDFRocketIridium02) {
 
-    FxAirUnitHitScale = 3,
-    FxLandHitScale = 3,
-    FxNoneHitScale = 3,
-    FxPropHitScale = 3,
-    FxProjectileHitScale = 3,
-    FxProjectileUnderWaterHitScale = 3,
-    FxShieldHitScale = 3,
-    FxUnderWaterHitScale = 3,
-    FxUnitHitScale = 3,
-    FxWaterHitScale = 3,
-    FxOnKilledScale = 3,
+    FxAirUnitHitScale = 4,
+    FxLandHitScale = 4,
+    FxNoneHitScale = 4,
+    FxPropHitScale = 4,
+    FxProjectileHitScale = 4,
+    FxProjectileUnderWaterHitScale = 4,
+    FxShieldHitScale = 4,
+    FxUnderWaterHitScale = 4,
+    FxUnitHitScale = 4,
+    FxWaterHitScale = 4,
+    FxOnKilledScale = 4,
 
 
     OnImpact = function(self, TargetType, targetEntity)

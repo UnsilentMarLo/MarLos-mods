@@ -255,6 +255,7 @@ UnitBlueprint {
             WeaponCategory = 'Defense',
             WeaponRepackTimeout = 1,
             WeaponUnpacks = true,
+            NotExclusive = true,
         },
         {
             AlwaysRecheckTarget = true,
@@ -347,6 +348,7 @@ UnitBlueprint {
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
             WeaponUnpacks = false,
+            NotExclusive = true,
         },
     },
     Wreckage = {
