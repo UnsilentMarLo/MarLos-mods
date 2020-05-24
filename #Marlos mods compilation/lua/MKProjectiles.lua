@@ -140,3 +140,13 @@ MKIridiumRocketProjectile = Class(SingleCompositeEmitterProjectile) {
     FxImpactLand = EffectTemplate2.MKMissileHit02a,
     FxImpactUnderWater = {},
 }
+
+TMastodonMKProjectile = Class(SingleCompositeEmitterProjectile) {
+    FxTrails = {},
+	PolyTrail = '/Mods/#Marlos mods compilation/effects/emitters/MK_iridium_missile_polytrail_02_emit.bp',    
+    BeamName = '/Mods/#Marlos mods compilation/effects/emitters/MK_iridium_exhaust_beam_01_emit.bp',
+    FxImpactUnit = EffectTemplate2.MKMissileHit02b,
+    FxImpactProp = EffectTemplate2.MKMissileHit02b,
+    FxImpactLand = EffectTemplate2.MKMissileHit02b,
+    FxImpactUnderWater = {},
+}

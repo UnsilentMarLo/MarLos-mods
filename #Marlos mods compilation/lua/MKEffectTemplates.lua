@@ -75,3 +75,10 @@ MKMissileHit02a = {
     EmtBpPath .. 'MK_iridium_hit_land_02_emit.bp',
     EmtBpPath .. 'MK_iridium_hit_ring_01_emit.bp',
 }
+
+MKMissileHit02b = {
+    EmtBpPath .. 'MK_iridium_hit_unit_02_emit.bp',
+    EmtBpPath .. 'MK_iridium_hit_land_03_emit.bp',
+    EmtBpPath .. 'MK_iridium_hit_land_04_emit.bp',
+    EmtBpPath .. 'MK_iridium_hit_ring_02_emit.bp',
+}
