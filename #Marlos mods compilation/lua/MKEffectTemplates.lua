@@ -82,3 +82,9 @@ MKMissileHit02b = {
     EmtBpPath .. 'MK_iridium_hit_land_04_emit.bp',
     EmtBpPath .. 'MK_iridium_hit_ring_02_emit.bp',
 }
+
+UEF_Gauss03_Trails01 = {
+    EmtBpPath .. 'w_u_gau03_p_01_polytrails_emit.bp',
+    EmtBpPath .. 'w_u_gau03_p_02_polytrails_emit.bp',
+    EmtBpPath .. 'gauss_cannon_munition_trail_03_emit.bp',
+}

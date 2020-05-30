@@ -11,6 +11,7 @@ local EffectTemplate = import('/lua/EffectTemplates.lua')
 local EffectTemplate2 = import('/Mods/#Marlos mods compilation/lua/MKEffectTemplates.lua')
 local DepthCharge = import('/lua/defaultantiprojectile.lua').DepthCharge
 local util = import('/lua/utilities.lua')
+EmtBpPath = '/Mods/#Marlos mods compilation/effects/emitters/'
 
 TArtilleryAntiMatterProjectile05 = Class(SinglePolyTrailProjectile) {
     FxLandHitScale = 1,
@@ -148,5 +149,18 @@ TMastodonMKProjectile = Class(SingleCompositeEmitterProjectile) {
     FxImpactUnit = EffectTemplate2.MKMissileHit02b,
     FxImpactProp = EffectTemplate2.MKMissileHit02b,
     FxImpactLand = EffectTemplate2.MKMissileHit02b,
+    FxImpactUnderWater = {},
+}
+
+TDFGaussCannonProjectile = Class(MultiPolyTrailProjectile) {
+    PolyTrails = {
+    EmtBpPath .. 'w_u_gau03_p_01_polytrails_emit.bp',
+    EmtBpPath .. 'w_u_gau03_p_02_polytrails_emit.bp',
+    EmtBpPath .. 'gauss_cannon_munition_trail_03_emit.bp',
+    },
+    PolyTrailOffset = {0,0},
+    FxImpactUnit = EffectTemplate.TGaussCannonHitUnit01,
+    FxImpactProp = EffectTemplate.TGaussCannonHitUnit01,
+    FxImpactLand = EffectTemplate.TGaussCannonHitLand01,
     FxImpactUnderWater = {},
 }

@@ -1,0 +1,12 @@
+EmitterBlueprint {
+	BlueprintId = 'w_u_gau03_p_03_brightglow',
+	Lifetime = -1.00,
+    TrailLength = 0.75,
+    Size = 0.06,
+    SortOrder = 0,
+    BlendMode = 3,
+    TextureRepeatRate = 1,
+    LODCutoff = 360,
+	RepeatTexture = [[/Mods/#Marlos mods compilation/textures/particles/glow.dds]],
+	RampTexture = [[/Mods/#Marlos mods compilation/textures/particles/ramp_yellow_blue_01.dds]],
+}

@@ -5,7 +5,7 @@
 -- Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
 -----------------------------------------------------------------
 
-local TWalkingLandUnit = import('/lua/terranunits.lua').TWalkingLandUnit
+local CWalkingLandUnit = import('/lua/cybranunits.lua').CWalkingLandUnit
 local MobileUnit = import('/lua/defaultunits.lua').MobileUnit
 local TDFHeavyPlasmaCannonWeapon = import('/lua/terranweapons.lua').TDFHeavyPlasmaGatlingCannonWeapon
 local TSAMLauncher = import('/lua/terranweapons.lua').TSAMLauncher
@@ -13,10 +13,12 @@ local TSAMLauncher = import('/lua/terranweapons.lua').TSAMLauncher
 local EffectUtils = import('/lua/effectutilities.lua')
 local Effects = import('/lua/effecttemplates.lua')
 local utilities = import('/lua/utilities.lua')
+local EffectTemplate = import('/lua/EffectTemplates.lua')
 local explosion = import('/lua/defaultexplosions.lua')
 local EffectUtil = import('/lua/EffectUtilities.lua')
+local CreateDeathExplosion = explosion.CreateDefaultHitExplosionAtBone
 
-MK73 = Class(TWalkingLandUnit) {
+MK73 = Class(CWalkingLandUnit) {
 
     Weapons = {
         RocketBackpack = Class(import('/lua/cybranweapons.lua').CDFRocketIridiumWeapon02) {},
@@ -128,6 +130,92 @@ MK73 = Class(TWalkingLandUnit) {
 
         self:Destroy()
     end,
+
+    OnLayerChange = function(self, new, old)
+        CWalkingLandUnit.OnLayerChange(self, new, old)
+        self:CreateUnitAmbientEffect(new)
+        if new == 'Seabed' then
+            self:EnableUnitIntel('Layer', 'Sonar')
+        else
+            self:DisableUnitIntel('Layer', 'Sonar')
+        end
+    end,
+
+	
+    AmbientExhaustBones = {
+        'Exhaust_01',
+        'Exhaust_02',
+    },
+
+    AmbientLandExhaustEffects = {
+        '/effects/emitters/dirty_exhaust_smoke_02_emit.bp',
+        '/effects/emitters/dirty_exhaust_sparks_02_emit.bp',
+    },
+
+    AmbientSeabedExhaustEffects = {
+        '/effects/emitters/underwater_vent_bubbles_02_emit.bp',
+    },
+
+    CreateUnitAmbientEffect = function(self, layer)
+        if self:GetFractionComplete() ~= 1 then
+            return
+        end
+        if self.AmbientEffectThread ~= nil then
+           self.AmbientEffectThread:Destroy()
+        end
+        if self.AmbientExhaustEffectsBag then
+            EffectUtil.CleanupEffectBag(self, 'AmbientExhaustEffectsBag')
+        end
+
+        self.AmbientEffectThread = nil
+        self.AmbientExhaustEffectsBag = {}
+        if layer == 'Land' then
+            self.AmbientEffectThread = self:ForkThread(self.UnitLandAmbientEffectThread)
+        elseif layer == 'Seabed' then
+            local army = self.Army
+            for kE, vE in self.AmbientSeabedExhaustEffects do
+                for kB, vB in self.AmbientExhaustBones do
+                    table.insert(self.AmbientExhaustEffectsBag, CreateAttachedEmitter(self, vB, army, vE))
+                end
+            end
+        end
+    end,
+
+    UnitLandAmbientEffectThread = function(self)
+        while not self.Dead do
+            local army = self.Army
+
+            for kE, vE in self.AmbientLandExhaustEffects do
+                for kB, vB in self.AmbientExhaustBones do
+                    table.insert(self.AmbientExhaustEffectsBag, CreateAttachedEmitter(self, vB, army, vE))
+                end
+            end
+
+            WaitSeconds(2)
+            EffectUtil.CleanupEffectBag(self, 'AmbientExhaustEffectsBag')
+
+            WaitSeconds(utilities.GetRandomFloat(1, 7))
+        end
+    end,
+
+    OnKilled = function(self, inst, type, okr)
+        if self.AmbientExhaustEffectsBag then
+            EffectUtil.CleanupEffectBag(self, 'AmbientExhaustEffectsBag')
+        end
+        if not self.Dead then
+            local wep = self:GetWeapon(1)
+            if wep.Beams then
+                if wep.Audio.BeamLoop and wep.Beams[1].Beam then
+                    wep.Beams[1].Beam:SetAmbientSound(nil, nil)
+                end
+                for k, v in wep.Beams do
+                    v.Beam:Disable()
+                end
+            end
+        end
+        CWalkingLandUnit.OnKilled(self, inst, type, okr)
+    end,
+	
 }
 
 TypeClass = MK73

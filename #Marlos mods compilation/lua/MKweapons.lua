@@ -73,3 +73,7 @@ ColossusLaser = Class(DefaultBeamWeapon) {
         end
     end,
 }
+
+TIFGrenadeWeapon = Class(DefaultProjectileWeapon) {
+    FxMuzzleFlash = {'/effects/emitters/antiair_muzzle_fire_02_emit.bp',}, 
+}
