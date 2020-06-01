@@ -25,9 +25,17 @@ ProjectileBlueprint {
         ImpactEffects = {
             Type = 'Medium02',
         },
-        MeshBlueprint = '/projectiles/TDFGauss01/TDFGauss01_mesh.bp',
+        Mesh = {
+            LODs = {
+                {
+                    AlbedoName = '/mods/#marlos mods compilation/projectiles/UCannonShell01/UCannonShell01_albedo.dds',
+                    LODCutoff = 300,
+                    ShaderName = 'TMeshAlpha',
+                },
+            },
+        },
         StrategicIconSize = 4,
-        UniformScale = 0.3,
+        UniformScale = 1.4,
     },
     General = {
         Category = 'Direct Fire',
@@ -38,7 +46,7 @@ ProjectileBlueprint {
     },
     Physics = {
         Acceleration = 0,
-        DestroyOnWater = false,
+        DestroyOnWater = true,
         InitialSpeed = 12,
         InitialSpeedRange = 0,
         InitialSpeedReduceDistance = 0,
