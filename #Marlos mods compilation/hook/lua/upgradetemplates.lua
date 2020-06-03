@@ -22,4 +22,4 @@ PlatoonTemplate {
 -- called from platoon.lua -> UnitUpgradeAI()
 
 -- earth Unit upgrades
-table.insert(UnitUpgradeTemplates[1], {'MK36', 'MK39'}) -- T1 Tank. Upgrade from TECH1 to TECH2
+table.insert(UnitUpgradeTemplates[1], {'KEL0101', 'KEL0205'}) -- T1 Tank. Upgrade from TECH1 to TECH2
