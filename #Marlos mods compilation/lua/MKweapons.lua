@@ -13,7 +13,6 @@ local KamikazeWeapon = WeaponFile.KamikazeWeapon
 local BareBonesWeapon = WeaponFile.BareBonesWeapon
 local DefaultProjectileWeapon = WeaponFile.DefaultProjectileWeapon
 local DefaultBeamWeapon = WeaponFile.DefaultBeamWeapon
-local OverchargeWeapon = WeaponFile.OverchargeWeapon
 
 local CollisionBeamFile = import('/lua/defaultcollisionbeams.lua')
 local Explosion = import('/lua/defaultexplosions.lua')
@@ -96,6 +95,29 @@ KingkriptorWeapon = Class(DefaultProjectileWeapon) {
 
 DreadnoughtLaser = Class(DefaultBeamWeapon) {
     BeamType = MKCollisionBeamFile.DreadnoughtLaserCollisionBeam,
+    FxMuzzleFlash = {},
+    FxChargeMuzzleFlash = {},
+    FxUpackingChargeEffects = EffectTemplate.CMicrowaveLaserCharge01,
+    FxUpackingChargeEffectScale = 0.0025,
+
+    PlayFxWeaponUnpackSequence = function(self)
+        if not self.ContBeamOn then
+            local army = self.unit:GetArmy()
+            local bp = self:GetBlueprint()
+            for k, v in self.FxUpackingChargeEffects do
+                for ek, ev in bp.RackBones[self.CurrentRackSalvoNumber].MuzzleBones do
+                    CreateAttachedEmitter(self.unit, ev, army, v):ScaleEmitter(self.FxUpackingChargeEffectScale):ScaleEmitter(0.0025)
+
+                end
+				
+            end
+            DefaultBeamWeapon.PlayFxWeaponUnpackSequence(self)
+        end
+    end,
+}
+
+BeamtankLaser = Class(DefaultBeamWeapon) {
+    BeamType = MKCollisionBeamFile.BeamtankCollisionBeam,
     FxMuzzleFlash = {},
     FxChargeMuzzleFlash = {},
     FxUpackingChargeEffects = EffectTemplate.CMicrowaveLaserCharge01,

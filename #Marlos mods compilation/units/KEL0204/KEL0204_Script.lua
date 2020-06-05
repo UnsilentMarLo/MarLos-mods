@@ -8,11 +8,11 @@
 #**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 local TLandUnit = import('/lua/terranunits.lua').TLandUnit
-local TOrbitalDeathLaserBeamWeapon = import('/lua/terranweapons.lua').TOrbitalDeathLaserBeamWeapon
+local BeamtankLaser = import('/mods/#Marlos mods compilation/lua/MKWeapons.lua').BeamtankLaser
 
 UEL0202 = Class(TLandUnit) {
     Weapons = {
-        OrbitalDeathLaserWeapon = Class(TOrbitalDeathLaserBeamWeapon){},
+        OrbitalDeathLaserWeapon = Class(BeamtankLaser){},
     },
 	
  --   OnKilled = function(self, instigator, type, overkillRatio)
