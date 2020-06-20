@@ -5,9 +5,11 @@ UnitList = {
               UEF = {'kel0303', 50}, -- Whirlwind (Heavy AA Tank) 
           },
           T3ArmoredAssault = {
-              UEF = {'kel0307', 50}, -- Artemis (Mobile Anti-Air missile launcher) 
+              UEF = {'kel0307', 40}, -- Artemis (Mobile Anti-Air missile launcher) 
           },
-      UnitList ['T3ArmoredAssaultSorian'] = UnitList ['T3ArmoredAssault']
+		  T2LandDFTank = {
+			  UEF = {'kel0202', 70}, -- Paddur (Mobile APC) 
+		  },
           T4LandExperimental1 = {
               UEF = {'kel0402', 50}, -- Mastodon (Experimental Assault Bot) 
               Cybran = {'krl0402', 50}, -- Homing Spider (Experimental Assault Bot) 
@@ -23,7 +25,8 @@ UnitList = {
               UEF = {'keb2302', 50}, -- V6 Rocket Installation (Intercontinental Ballistic Missile Launcher) 
           },
           T3SeaBattleship = {
+              UEF = {'kes0305', 30}, -- H-48 Olympus Class (Battlecarrier) 
               Cybran = {'krs0301', 50}, -- Universe Class (Submersible Battleship) 
               Aeon = {'kas0301', 50}, -- IOWA Class (Dreadnought) 
           },
-	},
+	}

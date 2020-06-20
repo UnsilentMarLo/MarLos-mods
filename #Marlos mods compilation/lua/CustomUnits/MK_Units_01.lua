@@ -8,7 +8,13 @@ UnitList = {
               Aeon = {'kal0301', 50}, -- Jarvis (Main Battle Tank) 
               Seraphim = {'ksl0301', 50}, -- Juun tzu (Main Battle Tank) 
           },
-      UnitList ['T3ArmoredAssaultSorian'] = UnitList ['T3ArmoredAssault']
+		  T1LandDFTank = {
+		  UEF = {'kel0101', 60}, -- M551 Sheridan (Heavy Tank) 
+		  },
+		  T2LandDFTank = {
+			  UEF = {'kel0201', 70}, -- Paddur (Mobile APC) 
+			  Seraphim = {'ksl0201', 50}, -- Name: Aranuhn (Mobile APC) 
+		  },
           T4LandExperimental1 = {
               UEF = {'kel0405', 50}, -- King Kriptor (Experimental Assault Bot) 
               Cybran = {'krl0401', 50}, -- Diablo (Experimental Mobile Tank) 
@@ -41,15 +47,8 @@ UnitList = {
           T3AirBomber = {
               UEF = {'kea0301', 20}, -- B-52 Stratofortress (Nuclear Bomber) 
           },
-      UnitList ['T3AirBomberSpecialSorian'] = UnitList ['T3AirBomber']
           T2SeaCruiser = {
               UEF = {'kes0201', 50}, -- Beirut Class (Tech 2 Early Battleship) 
-          },
-          T3SeaCarrier = {
-              UEF = {'kes0305', 50}, -- H-48 Olympus Class (Battlecarrier) 
-          },
-          T2Unknown = {
-              UEF = {'kel0203', 50}, -- Field Scanner (Mobile Intel Generator) 
           },
           T2GroundDefense = {
               UEF = {'keb2201', 50}, -- Pack Gun (Point Defense) 
@@ -62,6 +61,6 @@ UnitList = {
               Seraphim = {'kss0301', 70}, -- Uan shal voh (Heavy Destroyer) 
           },
           T3Battlecruiser = {
-              UEF = {'kes0401', 50}, -- Guada Class (Heavy Cruiser)
+              UEF = {'kes0401', 90}, -- Guada Class (Heavy Cruiser)
           },
-	},
+	}

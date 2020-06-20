@@ -1,10 +1,9 @@
 UnitList = {
 
           T3ArmoredAssault = {
-              UEF = {'kel0302', 50}, -- Pakwagen (Mobile Heavy Cannon) 
+              UEF = {'kel0302', 80}, -- Pakwagen (Mobile Heavy Cannon) 
           },
-      UnitList ['T3ArmoredAssaultSorian'] = UnitList ['T3ArmoredAssault']
           T4LandExperimental1 = {
-              UEF = {'kel0404', 50}, -- Fatboy II (Experimental Assault Vehicle) 
+              UEF = {'kel0404', 80}, -- Fatboy II (Experimental Assault Vehicle) 
           },
-	},
+	}
