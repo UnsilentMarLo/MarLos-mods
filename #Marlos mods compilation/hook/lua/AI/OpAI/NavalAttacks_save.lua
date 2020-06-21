@@ -74,13 +74,14 @@ Scenario = {
             'OST_NavalAttacks_T2Platoon1',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
         },
         ['OST_NavalAttacks_T2Platoon2'] = {
             'OST_NavalAttacks_T2Platoon2',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK54', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0203', -1, 1, 'attack', 'AttackFormation' }, -- Submarines
         },
         ['OST_NavalAttacks_T2Platoon3'] = {
@@ -93,14 +94,14 @@ Scenario = {
             'OST_NavalAttacks_T2Platoon4',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK54', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0103', -1, 1, 'attack', 'AttackFormation' }, -- Frigates
         },
         ['OST_NavalAttacks_T2Platoon5'] = {
             'OST_NavalAttacks_T2Platoon5',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK54', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0103', -1, 1, 'attack', 'AttackFormation' }, -- Frigates
             { 'ues0203', -1, 1, 'attack', 'AttackFormation' }, -- Submarines
         },
@@ -108,7 +109,7 @@ Scenario = {
             'OST_NavalAttacks_T2Platoon6',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK54', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
             { 'ues0203', -1, 1, 'attack', 'AttackFormation' }, -- Submarines
         },
@@ -123,7 +124,7 @@ Scenario = {
             'OST_NavalAttacks_T2Platoon8',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK54', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
             { 'ues0103', -1, 1, 'attack', 'AttackFormation' }, -- Frigates
             { 'ues0203', -1, 1, 'attack', 'AttackFormation' }, -- Submarines
@@ -134,39 +135,35 @@ Scenario = {
             'OST_NavalAttacks_BattleshipPlatoon',
             '',
             { 'ues0302', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
-            { 'MK56', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
-            { 'MK32', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
+            { 'kes0305', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
+            { 'kes0301', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
         },
         ['OST_NavalAttacks_T3Platoon1'] = {
             'OST_NavalAttacks_T3Platoon1',
             '',
             { 'ues0302', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
-            { 'MK56', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
-            { 'MK32', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
-            { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
-            { 'MK46', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
+            { 'kes0305', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
+            { 'kes0301', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
         },
         ['OST_NavalAttacks_T3Platoon2'] = {
             'OST_NavalAttacks_T3Platoon2',
             '',
             { 'ues0302', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
-            { 'MK56', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
-            { 'MK32', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
-            { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
-            { 'MK46', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
-            { 'ues0103', -1, 1, 'attack', 'AttackFormation' }, -- Frigates
+            { 'kes0305', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
+            { 'kes0301', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
         },
         ['OST_NavalAttacks_T3Platoon3'] = {
             'OST_NavalAttacks_T3Platoon3',
             '',
             { 'ues0302', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
-            { 'MK56', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
-            { 'MK32', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
-            { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
-            { 'MK46', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
+            { 'kes0305', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
+            { 'kes0301', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
             { 'ues0203', -1, 1, 'attack', 'AttackFormation' }, -- Submarines
             { 'EES0301', -1, 1, 'attack', 'AttackFormation' }, -- T3 Submarines
         },
@@ -174,12 +171,10 @@ Scenario = {
             'OST_NavalAttacks_T3Platoon4',
             '',
             { 'ues0302', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
-            { 'MK56', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
-            { 'MK32', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
-            { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
-            { 'MK46', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
-            { 'ues0103', -1, 1, 'attack', 'AttackFormation' }, -- Frigates
+            { 'kes0305', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
+            { 'kes0301', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
             { 'ues0203', -1, 1, 'attack', 'AttackFormation' }, -- Submarines
             { 'EES0301', -1, 1, 'attack', 'AttackFormation' }, -- T3 Submarines
         },
@@ -216,22 +211,21 @@ Scenario = {
             'OST_NavalAttacks_T2MixedPlatoon1',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK46', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'xes0204', -1, 1, 'attack', 'AttackFormation' }, -- T2Submarines
         },
         ['OST_NavalAttacks_T2MixedPlatoon2'] = {
             'OST_NavalAttacks_T2MixedPlatoon2',
             '',
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'xes0204', -1, 1, 'attack', 'AttackFormation' }, -- T2Submarines
         },
         ['OST_NavalAttacks_T2MixedPlatoon3'] = {
             'OST_NavalAttacks_T2MixedPlatoon3',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK46', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
             { 'xes0204', -1, 1, 'attack', 'AttackFormation' }, -- T2Submarines
         },
@@ -239,22 +233,21 @@ Scenario = {
             'OST_NavalAttacks_T2MixedPlatoon4',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK46', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'xes0205', -1, 1, 'attack', 'AttackFormation' }, -- UtilityBoats
         },
         ['OST_NavalAttacks_T2MixedPlatoon5'] = {
             'OST_NavalAttacks_T2MixedPlatoon5',
             '',
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'xes0205', -1, 1, 'attack', 'AttackFormation' }, -- UtilityBoats
         },
         ['OST_NavalAttacks_T2MixedPlatoon6'] = {
             'OST_NavalAttacks_T2MixedPlatoon6',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
-            { 'MK46', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
             { 'xes0205', -1, 1, 'attack', 'AttackFormation' }, -- UtilityBoats
         },
@@ -262,15 +255,18 @@ Scenario = {
             'OST_NavalAttacks_T3MixedPlatoon1',
             '',
             { 'ues0302', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
-            { 'MK56', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
-            { 'MK32', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
+            { 'kes0305', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
+            { 'kes0301', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
             { 'ues0303', -1, 1, 'attack', 'AttackFormation' }, -- Carriers
         },
         ['OST_NavalAttacks_T3MixedPlatoon2'] = {
             'OST_NavalAttacks_T3MixedPlatoon2',
             '',
             { 'ues0303', -1, 1, 'attack', 'AttackFormation' }, -- Carriers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
         },
 
@@ -310,7 +306,7 @@ Scenario = {
             'OST_NavalAttacks_AAPlatoon',
             '',
             { 'uas0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
             { 'uas0102', -1, 1, 'attack', 'AttackFormation' }, -- AABoats
         },
         ['OST_NavalAttacks_T2AeonPlatoon1'] = {
@@ -397,18 +393,21 @@ Scenario = {
             'OST_NavalAttacks_T2UEFPlatoon2',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'xes0102', -1, 1, 'attack', 'AttackFormation' }, -- TorpedoBoats
         },
         ['OST_NavalAttacks_T2UEFPlatoon3'] = {
             'OST_NavalAttacks_T2UEFPlatoon3',
             '',
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'xes0102', -1, 1, 'attack', 'AttackFormation' }, -- TorpedoBoats
         },
         ['OST_NavalAttacks_T2UEFPlatoon4'] = {
             'OST_NavalAttacks_T2UEFPlatoon4',
             '',
             { 'xes0102', -1, 1, 'attack', 'AttackFormation' }, -- TorpedoBoats
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'xes0205', -1, 1, 'attack', 'AttackFormation' }, -- UtilityBoats
         },
         ['OST_NavalAttacks_T2UEFPlatoon5'] = {
@@ -416,12 +415,15 @@ Scenario = {
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
             { 'xes0102', -1, 1, 'attack', 'AttackFormation' }, -- TorpedoBoats
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'xes0205', -1, 1, 'attack', 'AttackFormation' }, -- UtilityBoats
         },
         ['OST_NavalAttacks_T2UEFPlatoon6'] = {
             'OST_NavalAttacks_T2UEFPlatoon6',
             '',
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'xes0102', -1, 1, 'attack', 'AttackFormation' }, -- TorpedoBoats
             { 'xes0205', -1, 1, 'attack', 'AttackFormation' }, -- UtilityBoats
         },
@@ -429,6 +431,7 @@ Scenario = {
             'OST_NavalAttacks_T2UEFPlatoon7',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
             { 'xes0102', -1, 1, 'attack', 'AttackFormation' }, -- TorpedoBoats
         },
@@ -436,6 +439,7 @@ Scenario = {
             'OST_NavalAttacks_T2UEFPlatoon8',
             '',
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
+            { 'kes0201', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0202', -1, 1, 'attack', 'AttackFormation' }, -- Cruisers
             { 'xes0102', -1, 1, 'attack', 'AttackFormation' }, -- TorpedoBoats
             { 'xes0205', -1, 1, 'attack', 'AttackFormation' }, -- UtilityBoats
@@ -444,24 +448,30 @@ Scenario = {
             'OST_NavalAttacks_BattleCruiserPlatoon',
             '',
             { 'xes0307', -1, 1, 'attack', 'AttackFormation' }, -- BattleCruisers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
         },
         ['OST_NavalAttacks_T3UEFPlatoon1'] = {
             'OST_NavalAttacks_T3UEFPlatoon1',
             '',
             { 'xes0307', -1, 1, 'attack', 'AttackFormation' }, -- BattleCruisers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
             { 'ues0302', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
             { 'ues0302', -1, 1, 'attack', 'AttackFormation' }, -- Battleships
-            { 'MK56', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
-            { 'MK32', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
+            { 'kes0305', -1, 1, 'attack', 'AttackFormation' }, -- Heavy Battleships
+            { 'kes0301', -1, 1, 'attack', 'AttackFormation' }, -- Dreadnoughts
         },
         ['OST_NavalAttacks_T3UEFPlatoon2'] = {
             'OST_NavalAttacks_T3UEFPlatoon2',
             '',
             { 'xes0307', -1, 1, 'attack', 'AttackFormation' }, -- BattleCruisers
-            { 'MK47', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
-            { 'MK46', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0401', -1, 1, 'attack', 'AttackFormation' }, -- T3 Cruisers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
+            { 'kes0302', -1, 1, 'attack', 'AttackFormation' }, -- T3 Destroyers
             { 'ues0201', -1, 1, 'attack', 'AttackFormation' }, -- Destroyers
         },
     },

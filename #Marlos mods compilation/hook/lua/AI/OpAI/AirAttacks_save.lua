@@ -229,7 +229,7 @@ Scenario = {
         #### T1
         ['OST_AirAttacks_T1UEFPlatoonMK'] = {
             'OST_AirAttacks_T1UEFPlatoonMK', '',
-            { 'MK40', -1, 1, 'attack', 'AttackFormation' },  #Mod Light Gunships
+            { 'kea0101', -1, 1, 'attack', 'AttackFormation' },  #Mod Light Gunships
         },
 
         #### T2
