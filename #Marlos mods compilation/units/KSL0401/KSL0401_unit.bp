@@ -68,8 +68,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 42500,
-        MaxHealth = 42500,
+        Health = 22500,
+        MaxHealth = 22500,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 48,
@@ -98,8 +98,8 @@ UnitBlueprint {
                 Effects = {
                     {
                         Bones = {
-                            'Exhaust_Left',
-                            'Exhaust_Right',
+                            'Exhaust01',
+                            'Exhaust02',
                         },
                         Offset = {
                             0,
@@ -188,10 +188,10 @@ UnitBlueprint {
         UniformScale = 0.2,
     },
     Economy = {
-        BuildCostEnergy = 140000,
-        BuildCostMass = 12500,
-        BuildTime = 19850,
-        MaintenanceConsumptionPerSecondEnergy = 450,
+        BuildCostEnergy = 160000,
+        BuildCostMass = 16500,
+        BuildTime = 23850,
+        MaintenanceConsumptionPerSecondEnergy = 150,
     },
     General = {
         Category = 'Direct Fire',
@@ -290,8 +290,8 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 300,
-            DamageRadius = 5,
+            Damage = 150,
+            DamageRadius = 3,
             DamageType = 'Normal',
             DisplayName = 'Iridium Rocket Pack',
             FireTargetLayerCapsTable = {
@@ -385,8 +385,8 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 250,
-            DamageRadius = 2,
+            Damage = 150,
+            DamageRadius = 1,
             DamageType = 'Normal',
             DisplayName = 'Aire-au Bolter',
             FireTargetLayerCapsTable = {
@@ -448,9 +448,9 @@ UnitBlueprint {
         },
         {
             AboveWaterTargetsOnly = true,
-            Damage = 12000,
+            Damage = 3000,
             DamageFriendly = true,
-            DamageRadius = 8,
+            DamageRadius = 4,
             DamageType = 'DeathExplosion',
             DisplayName = 'Collossus Death',
             DummyWeapon = true,

@@ -103,7 +103,7 @@ UnitBlueprint {
 		BuildRate = 80,
         BuildTime = 6000,
         RebuildBonusIds = {
-            'MK26',
+            'KEB2302',
         },
     },
     Footprint = {

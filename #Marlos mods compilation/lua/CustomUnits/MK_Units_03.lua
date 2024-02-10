@@ -1,11 +1,12 @@
 UnitList = {
 
           T3ArmoredAssault = {
-              UEF = {'kel0301', 50}, -- Jerus (Main Battle Tank) 
+              UEF = {'kel0302', 80}, -- Pakwagen (Mobile Heavy Cannon) 
+              Cybran = {'krl0302', 80}, -- Overlord (Mobile Heavy Tank)
           },
-		  T2LandDFTank = {
-			  UEF = {'kel0204', 70}, -- Paddur (Mobile APC) 
-		  },
+		  -- T2LandDFTank = {
+			  -- UEF = {'kel0204', 40},
+		  -- },
           T4LandExperimental1 = {
               UEF = {'kel0401', 50}, -- Rat (Experimental Super Heavy Bombardment Tank) 
           },

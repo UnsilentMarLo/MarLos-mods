@@ -88,3 +88,32 @@ UEF_Gauss03_Trails01 = {
     EmtBpPath .. 'w_u_gau03_p_02_polytrails_emit.bp',
     EmtBpPath .. 'gauss_cannon_munition_trail_03_emit.bp',
 }
+
+-----------------------------------------------------------------
+-- Reclaim Effects
+-----------------------------------------------------------------
+ReclaimBeams = {
+	EmtBpPath .. 'reclaim_beam_01_emit.bp',
+	EmtBpPath .. 'reclaim_beam_02_emit.bp',
+}
+ReclaimMuzzle01 = {
+	EmtBpPath .. 'reclaim_06_glow_muzzle_emit.bp',
+	EmtBpPath .. 'reclaim_07_sparks_muzzle_emit.bp',
+}
+ReclaimEffects01 = {
+	EmtBpPath .. 'reclaim_03_dust_emit.bp',
+	EmtBpPath .. 'reclaim_04_debris_emit.bp',
+}
+ReclaimEffects02 = {
+	EmtBpPath .. 'reclaim_05_plasma_emit.bp',
+}
+ReclaimObjectAOE = {
+	EmtBpPath .. 'reclaim_01_sparks_emit.bp',
+	EmtBpPath .. 'reclaim_02_glow_emit.bp',
+}
+ReclaimObjectEnd = {
+	EmtBpPath .. 'reclaim_02_glow_emit.bp',
+}
+ReclaimWaterSteam = {
+	EmtBpPath .. 'reclaim_08_u_steam_emit.bp',
+}

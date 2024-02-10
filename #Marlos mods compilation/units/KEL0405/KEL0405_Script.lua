@@ -21,6 +21,8 @@ local EffectTemplate = import('/lua/EffectTemplates.lua')
 local explosion = import('/lua/defaultexplosions.lua')
 local EffectUtil = import('/lua/EffectUtilities.lua')
 local CreateDeathExplosion = explosion.CreateDefaultHitExplosionAtBone
+local EffectUtil = import('/lua/EffectUtilities.lua')
+local CreateBuildCubeThread = EffectUtil.CreateBuildCubeThread
 
 MK75 = Class(TWalkingLandUnit) {
 
@@ -97,6 +99,14 @@ MK75 = Class(TWalkingLandUnit) {
         HeadGun08 = Class(TIFHighBallisticMortarWeapon) {},
 
     },
+	
+    StartBeingBuiltEffects = function(self, builder, layer)
+        self:SetMesh(self:GetBlueprint().Display.BuildMeshBlueprint, true)
+        if self:GetBlueprint().General.UpgradesFrom ~= builder.UnitId then
+            self:HideBone(0, true)
+            self.OnBeingBuiltEffectsBag:Add(self:ForkThread(CreateBuildCubeThread, builder, self.OnBeingBuiltEffectsBag))
+        end
+    end,
 
     OnCreate = function(self, createArgs)
 		TWalkingLandUnit.OnCreate(self, createArgs)

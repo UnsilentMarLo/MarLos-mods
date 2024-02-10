@@ -70,8 +70,8 @@ UnitBlueprint {
         AirThreatLevel = 16,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 45000,
-        MaxHealth = 45000,
+        Health = 39000,
+        MaxHealth = 39000,
         RegenRate = 2,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 325,
@@ -124,9 +124,9 @@ UnitBlueprint {
         UniformScale = 0.1,
     },
     Economy = {
-        BuildCostEnergy = 124000,
-        BuildCostMass = 4100,
-        BuildTime = 22000,
+        BuildCostEnergy = 70000,
+        BuildCostMass = 8100,
+        BuildTime = 25000,
     },
     Footprint = {
         SizeX = 6,
@@ -215,9 +215,7 @@ UnitBlueprint {
         Level5 = 160,
     },
     Weapon = {
-	
 -- Main Guns
-
         {
             AboveWaterTargetsOnly = true,
             Audio = {
@@ -234,9 +232,9 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 538.125,
+            Damage = 160,
             DamageFriendly = false,
-            DamageRadius = 3,
+            DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Oblivion Cannon',
             FireTargetLayerCapsTable = {
@@ -316,9 +314,9 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 538.125,
+            Damage = 160,
             DamageFriendly = false,
-            DamageRadius = 3,
+            DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Oblivion Cannon',
             FireTargetLayerCapsTable = {
@@ -399,9 +397,9 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 538.125,
+            Damage = 160,
             DamageFriendly = false,
-            DamageRadius = 3,
+            DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Oblivion Cannon',
             FireTargetLayerCapsTable = {
@@ -481,9 +479,9 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 538.125,
+            Damage = 160,
             DamageFriendly = false,
-            DamageRadius = 3,
+            DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Oblivion Cannon',
             FireTargetLayerCapsTable = {
@@ -573,7 +571,7 @@ UnitBlueprint {
             BeamCollisionDelay = 0,
             BeamLifetime = 1,
             CollideFriendly = false,
-            Damage = 60,
+            Damage = 6,
             DamageRadius = 0,
             DamageType = 'Normal',
             DisplayName = 'Chromatic Phason Laser',
@@ -655,7 +653,7 @@ UnitBlueprint {
             BeamCollisionDelay = 0,
             BeamLifetime = 1,
             CollideFriendly = false,
-            Damage = 60,
+            Damage = 6,
             DamageRadius = 0,
             DamageType = 'Normal',
             DisplayName = 'Chromatic Phason Laser',
@@ -738,7 +736,7 @@ UnitBlueprint {
             BeamCollisionDelay = 0,
             BeamLifetime = 1,
             CollideFriendly = false,
-            Damage = 60,
+            Damage = 6,
             DamageRadius = 0,
             DamageType = 'Normal',
             DisplayName = 'Chromatic Phason Laser',
@@ -821,7 +819,7 @@ UnitBlueprint {
             BeamCollisionDelay = 0,
             BeamLifetime = 1,
             CollideFriendly = false,
-            Damage = 60,
+            Damage = 6,
             DamageRadius = 0,
             DamageType = 'Normal',
             DisplayName = 'Chromatic Phason Laser',

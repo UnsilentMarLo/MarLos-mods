@@ -129,7 +129,7 @@ UnitBlueprint {
         BuildCostEnergy = 1200,
         BuildCostMass = 220,
         BuildTime = 1240,
-        MaintenanceConsumptionPerSecondEnergy = 550,
+        MaintenanceConsumptionPerSecondEnergy = 80,
     },
     General = {
         Category = 'Intelligence',
@@ -164,10 +164,10 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 140,
+        RadarRadius = 80,
         ReactivateTime = 5,
         ShowIntelOnSelect = true,
-        VisionRadius = 80,
+        VisionRadius = 62,
     },
     Interface = {
         HelpText = 'Mobile Intel Generator',

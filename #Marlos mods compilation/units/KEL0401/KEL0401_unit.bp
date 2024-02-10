@@ -195,7 +195,7 @@ UnitBlueprint {
         MaxSteerForce = 1000,
         MeshExtentsX = 6,
         MeshExtentsY = 5,
-        MeshExtentsZ = 9,
+        MeshExtentsZ = 13,
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_Land',
         RotateBodyWhileMoving = false,

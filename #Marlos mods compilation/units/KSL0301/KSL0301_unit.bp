@@ -45,6 +45,7 @@ UnitBlueprint {
         'LAND',
         'TECH3',
         'DIRECTFIRE',
+        'AMPHIBIOUS',
         'VISIBLETORECON',
         'RECLAIMABLE',
         'TANK',
@@ -54,8 +55,8 @@ UnitBlueprint {
         AirThreatLevel = 16,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 14000,
-        MaxHealth = 14000,
+        Health = 11000,
+        MaxHealth = 11000,
         RegenRate = 10,
         Shield = {
             ImpactEffects = 'SeraphimShieldHit01',
@@ -77,6 +78,7 @@ UnitBlueprint {
     Display = {
         Abilities = {
             'Shield Dome',
+            'Amphibious',
         },
         Mesh = {
             IconFadeInZoom = 130,
@@ -135,9 +137,9 @@ UnitBlueprint {
         UniformScale = 0.16,
     },
     Economy = {
-        BuildCostEnergy = 80000,
-        BuildCostMass = 6000,
-        BuildTime = 11550, 
+        BuildCostEnergy = 24500,
+        BuildCostMass = 2180,
+        BuildTime = 7900, 
         MaintenanceConsumptionPerSecondEnergy = 330,
     },
     General = {
@@ -158,7 +160,7 @@ UnitBlueprint {
             RULEUCC_Transport = false,
         },
         FactionName = 'Seraphim',
-        Icon = 'land',
+        Icon = 'amph',
         TechLevel = 'RULEUTL_Secret',
         UnitName = 'Juun tzu',
         UnitWeight = 3,
@@ -192,7 +194,7 @@ UnitBlueprint {
         MeshExtentsY = 1,
         MeshExtentsZ = 3,
         MinSpeedPercent = 0,
-        MotionType = 'RULEUMT_Land',
+        MotionType = 'RULEUMT_Amphibious',
         RotateOnSpot = true,
         RotateOnSpotThreshold = 0.1,
         TurnRadius = 0,
@@ -232,7 +234,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 1000,
+            Damage = 750,
             DamageRadius = 3,
             DamageType = 'Normal',
             DisplayName = 'Gauss Cannon',
@@ -309,7 +311,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
-            Damage = 120,
+            Damage = 43,
             DamageType = 'Normal',
             DisplayName = 'Hells Fury Riot Gun',
             FireTargetLayerCapsTable = {

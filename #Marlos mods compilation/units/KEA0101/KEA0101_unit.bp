@@ -202,7 +202,7 @@ UnitBlueprint {
     SelectionSizeX = 0.6,
     SelectionSizeZ = 0.9,
     SelectionThickness = 0.49,
-    SizeSphere = 1.6,
+    SizeSphere = 1.8,
     SizeX = 1,
     SizeY = 0.5,
     SizeZ = 1,
@@ -234,12 +234,12 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 4,
+            Damage = 8,
             DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Rocket Artillery',
-			DoTPulses = 10,
-			DoTTime = 4, -- 180 fire damage per Missile, Total fire damage = 2400
+			DoTPulses = 4,
+			DoTTime = 6, -- 180 fire damage per Missile, Total fire damage = 2400
             FireTargetLayerCapsTable = {
                 Air = 'Land|Water|Seabed',
                 Seabed = 'Land|Water|Seabed',
@@ -296,7 +296,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 1,
+            RateOfFire = 0.2,
             SalvoShotDelay = 40,
             SalvoSize = 12,
             TargetCheckInterval = 0.5,
@@ -337,12 +337,12 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 4,
+            Damage = 8,
             DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Rocket Artillery',
-			DoTPulses = 10,
-			DoTTime = 4, -- X fire damage per Missile, Total fire damage = X
+			DoTPulses = 4,
+			DoTTime = 6, -- X fire damage per Missile, Total fire damage = X
             FireTargetLayerCapsTable = {
                 Air = 'Land|Water|Seabed',
                 Seabed = 'Land|Water|Seabed',
@@ -399,7 +399,7 @@ UnitBlueprint {
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
-            RateOfFire = 1,
+            RateOfFire = 0.2,
             SalvoShotDelay = 40,
             SalvoSize = 12,
             TargetCheckInterval = 0.5,
@@ -439,7 +439,7 @@ UnitBlueprint {
             AutoInitiateAttackCommand = true,
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
-            Damage = 5,
+            Damage = 4,
             DamageType = 'Normal',
             DisplayName = 'Hells Fury Riot Gun',
             FireTargetLayerCapsTable = {

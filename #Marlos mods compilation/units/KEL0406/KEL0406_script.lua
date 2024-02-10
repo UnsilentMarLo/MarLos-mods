@@ -14,6 +14,8 @@ local TANTorpedoAngler = import('/lua/terranweapons.lua').TANTorpedoAngler
 local TSAMLauncher = import('/lua/terranweapons.lua').TSAMLauncher
 local TAMPhalanxWeapon = import('/lua/terranweapons.lua').TAMPhalanxWeapon
 local TIFCruiseMissileLauncher = import('/lua/terranweapons.lua').TIFCruiseMissileLauncher
+local EffectUtil = import('/lua/EffectUtilities.lua')
+local CreateBuildCubeThread = EffectUtil.CreateBuildCubeThread
 
 UEL0203 = Class(THoverLandUnit) {
 
@@ -66,6 +68,14 @@ UEL0203 = Class(THoverLandUnit) {
             
             },
 		},
+		
+    StartBeingBuiltEffects = function(self, builder, layer)
+        self:SetMesh(self:GetBlueprint().Display.BuildMeshBlueprint, true)
+        if self:GetBlueprint().General.UpgradesFrom ~= builder.UnitId then
+            self:HideBone(0, true)
+            self.OnBeingBuiltEffectsBag:Add(self:ForkThread(CreateBuildCubeThread, builder, self.OnBeingBuiltEffectsBag))
+        end
+    end,
 
     OnStopBeingBuilt = function(self,builder,layer)
         THoverLandUnit.OnStopBeingBuilt(self,builder,layer)

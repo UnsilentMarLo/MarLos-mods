@@ -101,7 +101,7 @@ UnitBlueprint {
         BuildCostMass = 35000,
         BuildTime = 32000,
         RebuildBonusIds = {
-            'MK58',
+            'KRB2301',
         },
     },
     Footprint = {
@@ -214,7 +214,7 @@ UnitBlueprint {
             DamageType = 'Normal',
             DisplayName = 'Anti Matter Artillery',
             EnergyDrainPerSecond = 1000,
-            EnergyRequired = 2000,
+            EnergyRequired = 1000,
             FireTargetLayerCapsTable = {
                 Land = 'Water|Seabed',
                 Water = 'Water|Seabed',
@@ -253,15 +253,15 @@ UnitBlueprint {
             },
             RackFireTogether = false,
             RackRecoilDistance = -8,
-            RackReloadTimeout = 10,
+            RackReloadTimeout = 0,
             RackSalvoChargeTime = 0,
             RackSalvoReloadTime = 0,
             RackSalvoSize = 1,
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_AntiNavy',
-            RateOfFire = 0.4*1.33333,
-            SalvoShotDelay = 1,
-            SalvoSize = 2,
+            RateOfFire = 0.6,
+            SalvoShotDelay = 0,
+            SalvoSize = 3,
             RenderFireClock = false,
             TargetCheckInterval = 3,
             TargetPriorities = {

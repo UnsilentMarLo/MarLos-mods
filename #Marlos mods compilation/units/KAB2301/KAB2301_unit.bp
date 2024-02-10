@@ -110,7 +110,7 @@ UnitBlueprint {
         BuildCostMass = 35000,
         BuildTime = 32000,
         RebuildBonusIds = {
-            'MK53',
+            'KAB2301',
         },
     },
     Footprint = {

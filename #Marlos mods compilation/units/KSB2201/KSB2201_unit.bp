@@ -93,11 +93,11 @@ UnitBlueprint {
         UniformScale = 0.04,
     },
     Economy = {
-        BuildCostEnergy = 9800,
-        BuildCostMass = 1640,
+        BuildCostEnergy = 7800,
+        BuildCostMass = 1140,
         BuildTime = 950,
         RebuildBonusIds = {
-            'MK16',
+            'KSB2201',
         },
     },
     Footprint = {
@@ -181,29 +181,19 @@ UnitBlueprint {
         {
             AboveWaterTargetsOnly = true,
             Audio = {
-                BarrelLoop = Sound {
-                    Bank = 'UAS',
-                    Cue = 'UAS_Turret_Sml_Loop',
-                    LodCutoff = 'Weapon_LodCutoff',
-                },
-                BarrelStart = Sound {
-                    Bank = 'UAS',
-                    Cue = 'UAS_Turret_Sml_Start',
-                    LodCutoff = 'Weapon_LodCutoff',
-                },
                 Fire = Sound {
-                    Bank = 'XSS_Weapon',
-                    Cue = 'XSS0103_Shieeih_Autocannon',
+                    Bank = 'XSL_Weapon',
+                    Cue = 'XSL0201_Cannon_Spectra',
                     LodCutoff = 'Weapon_LodCutoff',
                 },
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 120,
+            Damage = 90,
             DamageFriendly = false,
             DamageRadius = 2,
             DamageType = 'Normal',
-            DisplayName = 'Shie-eih Auto-Cannon',
+            DisplayName = 'Oh Spectra Cannon',
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',
                 Water = 'Land|Water|Seabed',
@@ -211,11 +201,11 @@ UnitBlueprint {
             FiringRandomness = 0.1,
             FiringTolerance = 2,
             Label = 'MainGun',
-            MaxRadius = 45,
+            MaxRadius = 36,
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/projectiles/SDFShieeihAutoCannon01/SDFShieeihAutoCannon01_proj.bp',
+            ProjectileId = '/projectiles/SDFOhCannon01/SDFOhCannon01_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 2,
             RackBones = {

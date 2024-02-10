@@ -54,8 +54,8 @@ UnitBlueprint {
         AirThreatLevel = 16,
         ArmorType = 'Experimental',
         EconomyThreatLevel = 0,
-        Health = 14000,
-        MaxHealth = 14000,
+        Health = 8500,
+        MaxHealth = 8500,
         RegenRate = 10,
         Shield = {
             ImpactEffects = 'AeonShieldHit01',
@@ -165,9 +165,9 @@ UnitBlueprint {
         UniformScale = 0.16,
     },
     Economy = {
-        BuildCostEnergy = 80000,
-        BuildCostMass = 6000,
-        BuildTime = 11550, 
+        BuildCostEnergy = 32500,
+        BuildCostMass = 1880,
+        BuildTime = 7900, 
         MaintenanceConsumptionPerSecondEnergy = 330,
     },
     General = {
@@ -283,7 +283,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
-            Damage = 2000,
+            Damage = 1500,
             DamageRadius = 3,
             DamageType = 'Normal',
             DisplayName = 'Oblivion Cannon',
@@ -356,7 +356,7 @@ UnitBlueprint {
             },
             BallisticArc = 'RULEUBA_None',
             CollideFriendly = false,
-            Damage = 120,
+            Damage = 40,
             DamageType = 'Normal',
             DisplayName = 'Quantum Autoguns',
             FireTargetLayerCapsTable = {

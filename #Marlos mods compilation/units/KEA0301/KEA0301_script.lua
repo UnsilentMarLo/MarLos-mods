@@ -21,8 +21,8 @@ UEA0302 = Class(TAirUnit) {
         },
 	},
 
-    BeamExhaustIdle = '/mods/#1Marlos mods compilation/effects/emitters/gunship_thruster_beam_03_emit.bp',
-	BeamExhaustCruise = '/mods/#1Marlos mods compilation/effects/emitters/gunship_thruster_beam_03_emit.bp',
+    BeamExhaustIdle = '/mods/#Marlos mods compilation/effects/emitters/gunship_thruster_beam_04_emit.bp',
+	BeamExhaustCruise = '/mods/#Marlos mods compilation/effects/emitters/gunship_thruster_beam_04_emit.bp',
 	
 }
 

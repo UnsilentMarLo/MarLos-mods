@@ -183,7 +183,6 @@ UnitBlueprint {
                 },
             },
         },
-        SpawnRandomRotation = true,
         UniformScale = 0.1,
     },
     Economy = {
@@ -192,8 +191,6 @@ UnitBlueprint {
         BuildTime = 71500,
     },
     General = {
-        Category = 'Direct Fire',
-        Classification = 'RULEUC_MilitaryVehicle',
         CommandCaps = {
             RULEUCC_Attack = true,
             RULEUCC_CallTransport = false,
@@ -221,7 +218,6 @@ UnitBlueprint {
             RULEUTC_ShieldToggle = true,
         },
         UnitName = 'Colossus',
-        UnitWeight = 1,
     },
     Intel = {
         OmniRadius = 50,

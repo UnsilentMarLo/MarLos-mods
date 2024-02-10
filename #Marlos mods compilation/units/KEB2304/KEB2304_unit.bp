@@ -29,8 +29,8 @@ UnitBlueprint {
     Categories = {
         'PRODUCTMK',
         'SELECTABLE',
-        'BUILTBYTIER3ENGINEER',
-        'BUILTBYTIER3COMMANDER',
+        -- 'BUILTBYTIER3ENGINEER',
+        -- 'BUILTBYTIER3COMMANDER',
         'UEF',
         'STRUCTURE',
         'DEFENSE',
@@ -94,7 +94,7 @@ UnitBlueprint {
         BuildCostMass = 2500,
         BuildTime = 1200,
         RebuildBonusIds = {
-            'MK29',
+            'KEB2304',
         },
     },
     General = {

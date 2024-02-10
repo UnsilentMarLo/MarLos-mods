@@ -7,12 +7,15 @@ UnitList = {
               Cybran = {'krl0301', 50}, -- Jody (Main Battle Tank) 
               Aeon = {'kal0301', 50}, -- Jarvis (Main Battle Tank) 
               Seraphim = {'ksl0301', 50}, -- Juun tzu (Main Battle Tank) 
+              UEF = {'kel0301', 50}, -- Jerus (Main Battle Tank) 
           },
-		  T1LandDFTank = {
-		  UEF = {'kel0101', 60}, -- M551 Sheridan (Heavy Tank) 
-		  },
+		  -- T1LandDFTank = {
+		  -- UEF = {'kel0101', 60}, -- M551 Sheridan (Heavy Tank) 
+		  -- },
 		  T2LandDFTank = {
-			  UEF = {'kel0201', 70}, -- Paddur (Mobile APC) 
+			  UEF = {'kel0201', 50}, -- Paddur (Mobile APC) 
+		  },
+		  T2LandAmphibious = {
 			  Seraphim = {'ksl0201', 50}, -- Name: Aranuhn (Mobile APC) 
 		  },
           T4LandExperimental1 = {
@@ -26,6 +29,8 @@ UnitList = {
           },
           T2Artillery = {
               UEF = {'keb2202', 50}, -- Dwarf star (Mortar Installation) 
+              Cybran = {'krb0205', 30}, -- T2 Mass Reclaiming Facility (Recycler)
+              Aeon = {'kab2202', 50}, -- (Mortar Installation) 
           },
           T3GroundDefense = {
               UEF = {'keb2301', 20}, -- Naval Cannon (Heavy Naval Artillery Bunker) 
@@ -35,11 +40,13 @@ UnitList = {
           },
           T3LandArtillery = {
               UEF = {'kel0308', 50}, -- Nuker (Nuclear Cannon) 
+              Cybran = {'krl0304', 50}, -- T3 MLRS (Mars)
               Aeon = {'kal0304', 50}, -- Insanity (MLRS) 
           },
           T4AirExperimental1 = {
               UEF = {'kea0401', 50}, -- Airboy (Experimental Gunship) 
               Aeon = {'kaa0401', 50}, -- HMP Restorator (Experimental Gunship) 
+              Seraphim = {'ksa0401', 50}, -- T4 Gunship (Vulthoum)
           },
           T3AADefense = {
               UEF = {'keb2305', 50}, -- Kashtan (Close-in-Weapon-System) 
@@ -52,7 +59,9 @@ UnitList = {
           },
           T2GroundDefense = {
               UEF = {'keb2201', 50}, -- Pack Gun (Point Defense) 
-              Seraphim = {'ksb2201', 50}, -- Umuushal (Point Defense) 
+              Cybran = {'krb2201', 50}, -- (Point Defense) 
+              Aeon = {'kab2201', 50}, -- Umuushal (Point Defense) 
+              Seraphim = {'ksb2201', 50}, -- (Point Defense) 
           },
           T3SeaBattleship = {
               UEF = {'kes0302', 70}, -- Iwojima Class (Heavy Destroyer) 
@@ -61,6 +70,7 @@ UnitList = {
               Seraphim = {'kss0301', 70}, -- Uan shal voh (Heavy Destroyer) 
           },
           T3Battlecruiser = {
-              UEF = {'kes0401', 90}, -- Guada Class (Heavy Cruiser)
+              UEF = {'kes0401', 100}, -- Guada Class (Heavy Cruiser)
+              Cybran = {'krs0401', 90}, -- Lockdown Class (Heavy Cruiser)
           },
 	}

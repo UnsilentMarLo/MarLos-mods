@@ -97,7 +97,7 @@ UnitBlueprint {
         BuildCostMass = 2300,
         BuildTime = 2000,
         RebuildBonusIds = {
-            'MK41',
+            'KEB2202',
         },
     },
     Footprint = {
@@ -182,8 +182,8 @@ UnitBlueprint {
             ArtilleryShieldBlocks = true,
             Audio = {
                 Fire = Sound {
-                    Bank = 'UELWeapon',
-                    Cue = 'UEB2303_Artillery_APDS',
+                    Bank = 'MarlosSoundsUEF',
+                    Cue = 'mortar_heavy',
                     LodCutoff = 'Weapon_LodCutoff',
                 },
             },

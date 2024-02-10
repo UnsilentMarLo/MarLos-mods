@@ -1,13 +1,13 @@
 ProjectileBlueprint {
     Audio = {
         Impact = Sound {
-            Bank = 'Impacts',
-            Cue = 'Impact_Land_Gen_UEF_Big',
+            Bank = 'MarlosSoundsUEF',
+            Cue = 'big_fuel',
             LodCutoff = 'Weapon_LodCutoff',
         },
         ImpactTerrain = Sound {
-            Bank = 'Impacts',
-            Cue = 'Impact_Land_Gen_UEF_Big',
+            Bank = 'MarlosSoundsUEF',
+            Cue = 'big_fuel',
             LodCutoff = 'Weapon_LodCutoff',
         },
         ImpactWater = Sound {

@@ -15,6 +15,8 @@ local TDFIonizedPlasmaCannon = WeaponsFile.TDFIonizedPlasmaCannon
 local TSAMLauncher = import('/lua/terranweapons.lua').TSAMLauncher
 local TANTorpedoAngler = WeaponsFile.TANTorpedoAngler
 local TIFSmartCharge = WeaponsFile.TIFSmartCharge
+local EffectUtil = import('/lua/EffectUtilities.lua')
+local CreateBuildCubeThread = EffectUtil.CreateBuildCubeThread
 
 local TAMPhalanxWeapon = WeaponsFile.TAMPhalanxWeapon
 
@@ -44,27 +46,29 @@ MK52 = Class(TSeaUnit) {
         AntiTorpedo = Class(TIFSmartCharge) {},
         Torpedo01 = Class(TANTorpedoAngler) {},
         Torpedo02 = Class(TANTorpedoAngler) {},
-        SpecialMissileRack01 = Class(TSAMLauncher) {
-            RackSalvoFireReadyState = State(TSAMLauncher.RackSalvoFireReadyState) {
-                Main = function(self)
-                    local MuzzleSalvoSize = 80
-                    if self.unit:GetTacticalSiloAmmoCount() < MuzzleSalvoSize then
-                        self:ForkThread(
-                            function(self)
-                                WaitTicks(1)
-                                if self.unit:GetTacticalSiloAmmoCount() > MuzzleSalvoSize - 1 then
-                                    --Last minute panic check, not sure if it will actually work, very hard to test chance to test it
-                                    TSAMLauncher.RackSalvoFireReadyState.Main(self)
-                                end
-                            end
-                        )
-                        return
-                    else
-                        TSAMLauncher.RackSalvoFireReadyState.Main(self)
-                    end
-                end,
-			},
-		},
+		
+        -- SpecialMissileRack01 = Class(TSAMLauncher) {
+            -- RackSalvoFireReadyState = State(TSAMLauncher.RackSalvoFireReadyState) {
+                -- Main = function(self)
+                    -- local MuzzleSalvoSize = 80
+                    -- if self.unit:GetTacticalSiloAmmoCount() < MuzzleSalvoSize then
+                        -- self:ForkThread(
+                            -- function(self)
+                                -- WaitTicks(1)
+                                -- if self.unit:GetTacticalSiloAmmoCount() > MuzzleSalvoSize - 1 then
+                                    -- --Last minute panic check, not sure if it will actually work, very hard to test chance to test it
+                                    -- TSAMLauncher.RackSalvoFireReadyState.Main(self)
+                                -- end
+                            -- end
+                        -- )
+                        -- return
+                    -- else
+                        -- TSAMLauncher.RackSalvoFireReadyState.Main(self)
+                    -- end
+                -- end,
+			-- },
+		-- },
+		
         GatlingCannon01 = Class(TAMPhalanxWeapon) {
             PlayFxWeaponUnpackSequence = function(self)
                 if not self.SpinManip then 
@@ -143,6 +147,14 @@ MK52 = Class(TSeaUnit) {
         },
 		
     },
+	
+    StartBeingBuiltEffects = function(self, builder, layer)
+        self:SetMesh(self:GetBlueprint().Display.BuildMeshBlueprint, true)
+        if self:GetBlueprint().General.UpgradesFrom ~= builder.UnitId then
+            self:HideBone(0, true)
+            self.OnBeingBuiltEffectsBag:Add(self:ForkThread(CreateBuildCubeThread, builder, self.OnBeingBuiltEffectsBag))
+        end
+    end,
 
     OnStopBeingBuilt = function(self,builder,layer)
         TSeaUnit.OnStopBeingBuilt(self,builder,layer)
