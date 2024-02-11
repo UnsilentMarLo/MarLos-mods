@@ -19,7 +19,9 @@ MK69 = Class(AWalkingLandUnit) {
 
     Weapons = {
         MainGun = Class(CDFHeavyMicrowaveLaserGeneratorCom) {},
-        RightLaserTurret = Class(CDFElectronBolterWeapon) {},
+        LaserTurret = Class(CDFElectronBolterWeapon) {},
+        RightLaserTurret = ClassWeapon(CDFElectronBolterWeapon) {},
+        LeftLaserTurret = ClassWeapon(CDFElectronBolterWeapon) {},
     },
 
     OnKilled = function(self, instigator, type, overkillRatio)

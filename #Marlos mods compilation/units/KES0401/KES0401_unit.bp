@@ -1,8 +1,7 @@
 UnitBlueprint {
     AI = {
         AttackAngle = 90,
-        GuardReturnRadius = 130,
-        InitialAutoMode = true,
+        GuardReturnRadius = 3,
         TargetBones = {
             'UUS0105',
             'Turret01',

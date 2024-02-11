@@ -1,5 +1,6 @@
 UnitBlueprint {
     AI = {
+        GuardScanRadius = 3,
         AttackAngle = 20,
         TargetBones = {
             'Target_01',

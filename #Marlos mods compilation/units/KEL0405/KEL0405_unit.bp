@@ -262,7 +262,7 @@ UnitBlueprint {
                     LodCutoff = 'Weapon_LodCutoff',
                 },
             },
-            AutoInitiateAttackCommand = true,
+            -- AutoInitiateAttackCommand = true,
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
             Damage = 400,
@@ -339,7 +339,7 @@ UnitBlueprint {
             AboveWaterFireOnly = true,
             AboveWaterTargetsOnly = true,
             AlwaysRecheckTarget = false,
-            AutoInitiateAttackCommand = true,
+            -- AutoInitiateAttackCommand = true,
 			Audio = {
                 Fire = Sound {
                     Bank = 'UALWeapon',
@@ -425,7 +425,7 @@ UnitBlueprint {
             AboveWaterFireOnly = true,
             AboveWaterTargetsOnly = true,
             AlwaysRecheckTarget = false,
-            AutoInitiateAttackCommand = true,
+            -- AutoInitiateAttackCommand = true,
 			Audio = {
                 Fire = Sound {
                     Bank = 'UALWeapon',
@@ -512,7 +512,7 @@ UnitBlueprint {
         {
             AboveWaterFireOnly = true,
             AboveWaterTargetsOnly = true,
-            AutoInitiateAttackCommand = true,
+            -- AutoInitiateAttackCommand = true,
             Audio = {
                 Fire = Sound {
                     Bank = 'UELWeapon',
@@ -520,7 +520,7 @@ UnitBlueprint {
                     LodCutoff = 'Weapon_LodCutoff',
                 },
             },
-            AutoInitiateAttackCommand = true,
+            -- AutoInitiateAttackCommand = true,
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
             Damage = 400,
@@ -593,7 +593,7 @@ UnitBlueprint {
         {
             AboveWaterFireOnly = true,
             AboveWaterTargetsOnly = true,
-            AutoInitiateAttackCommand = true,
+            -- AutoInitiateAttackCommand = true,
             Audio = {
                 Fire = Sound {
                     Bank = 'UELWeapon',
@@ -601,7 +601,7 @@ UnitBlueprint {
                     LodCutoff = 'Weapon_LodCutoff',
                 },
             },
-            AutoInitiateAttackCommand = true,
+            -- AutoInitiateAttackCommand = true,
             BallisticArc = 'RULEUBA_LowArc',
             CollideFriendly = false,
             Damage = 400,

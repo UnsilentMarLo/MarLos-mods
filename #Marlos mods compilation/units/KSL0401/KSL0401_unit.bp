@@ -1,4 +1,11 @@
 UnitBlueprint {
+    AI = {
+        GuardScanRadius = 3,
+        TargetBones = {
+            'Turret_01',
+            'Turret_Barrel_01',
+        },
+    },
     Audio = {
         AmbientMove = Sound {
             Bank = 'XSL',
@@ -280,6 +287,7 @@ UnitBlueprint {
     },
     Weapon = {
         {
+            AutoInitiateAttackCommand = true,
             AboveWaterTargetsOnly = true,
             Audio = {
                 Fire = Sound {
