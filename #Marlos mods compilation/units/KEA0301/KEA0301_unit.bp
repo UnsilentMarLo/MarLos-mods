@@ -222,7 +222,7 @@ UnitBlueprint {
         UnitWeight = 3,
     },
     Intel = {
-        VisionRadius = 45,
+        VisionRadius = 46,
     },
     Interface = {
         HelpText = 'Nuclear Bomber',
@@ -319,10 +319,14 @@ UnitBlueprint {
             StopOnPrimaryWeaponBusy = false,
             TargetCheckInterval = 1,
             TargetPriorities = {
-                'SPECIALHIGHPRI',
-                'STRUCTURE',
-                'SPECIALLOWPRI',
-                'ALLUNITS',
+                'COMMAND',
+                'EXPERIMENTAL',
+                'SUBCOMMANDER',
+                "TECH3 MOBILE",
+                "TECH2 MOBILE",
+                "(STRUCTURE * DEFENSE - ANTIMISSILE)",
+                "STRUCTURE",
+                "ALLUNITS",
             },
             TargetRestrictDisallow = 'UNTARGETABLE',
             TrackingRadius = 1.25,

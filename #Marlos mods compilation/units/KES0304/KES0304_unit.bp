@@ -213,10 +213,10 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        RadarRadius = 130,
-        SonarRadius = 70,
-        VisionRadius = 90,
-        WaterVisionRadius = 90,
+        RadarRadius = 132,
+        SonarRadius = 72,
+        VisionRadius = 92,
+        WaterVisionRadius = 92,
     },
     Interface = {
         HelpText = 'Support Dreadnought',

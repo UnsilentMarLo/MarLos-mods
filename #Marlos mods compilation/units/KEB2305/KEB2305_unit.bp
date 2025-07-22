@@ -167,9 +167,9 @@ UnitBlueprint {
     SelectionSizeZ = 1.85,
     SelectionCenterOffsetZ = -0.35,
     SelectionThickness = 0.5,
-    SizeX = 2.0,
-    SizeY = 1.4,
-    SizeZ = 2.0,
+    SizeX = 2.8,
+    SizeY = 2.3,
+    SizeZ = 2.8,
     StrategicIconName = 'icon_structure3_antiair',
     StrategicIconSortPriority = 195,
     Veteran = {

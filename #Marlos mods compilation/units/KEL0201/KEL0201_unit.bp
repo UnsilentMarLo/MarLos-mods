@@ -152,7 +152,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
-        VisionRadius = 23,
+        VisionRadius = 24,
     },
     Interface = {
         HelpText = 'Mobile APC',
