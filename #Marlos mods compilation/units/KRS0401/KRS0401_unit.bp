@@ -194,8 +194,8 @@ UnitBlueprint {
     Intel = {
         RadarRadius = 400,
         SonarRadius = 400,
-        VisionRadius = 90,
-        WaterVisionRadius = 90,
+        VisionRadius = 92,
+        WaterVisionRadius = 92,
     },
     Interface = {
         HelpText = 'Heavy Cruiser',
@@ -307,9 +307,14 @@ UnitBlueprint {
             SlavedToBodyArcRange = 20,
             TargetCheckInterval = 0.16,
             TargetPriorities = {
-                'SPECIALHIGHPRI',
-                'SPECIALLOWPRI',
-                'ALLUNITS',
+                'COMMAND',
+                'EXPERIMENTAL',
+                'SUBCOMMANDER',
+                "TECH3 MOBILE",
+                "TECH2 MOBILE",
+                "(STRUCTURE * DEFENSE - ANTIMISSILE)",
+                "STRUCTURE",
+                "ALLUNITS",
             },
             TargetRestrictDisallow = 'UNTARGETABLE',
             TurretDualManipulators = false,

@@ -206,9 +206,9 @@ UnitBlueprint {
     SelectionSizeX = 0.5,
     SelectionSizeZ = 0.5,
     SelectionThickness = 0.85,
-    SizeX = 0.6,
-    SizeY = 0.35,
-    SizeZ = 0.7,
+    SizeX = 1.0,
+    SizeY = 1.0,
+    SizeZ = 1.0,
     StrategicIconName = 'icon_land2_intel',
     StrategicIconSortPriority = 125,
     Transport = {
