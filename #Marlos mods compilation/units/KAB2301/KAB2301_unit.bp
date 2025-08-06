@@ -26,7 +26,7 @@ UnitBlueprint {
             Level5 = 50,
         },
     },
-    BuildIconSortPriority = 140,
+    BuildIconSortPriority = 120,
     Categories = {
         'PRODUCTMK',
         'SELECTABLE',
@@ -34,16 +34,17 @@ UnitBlueprint {
         'BUILTBYTIER3COMMANDER',
         'AEON',
         'STRUCTURE',
-        'DEFENSE',
+        'STRATEGIC',
         'TECH3',
-        'DIRECTFIRE',
+        'INDIRECTFIRE',
+        'ARTILLERY',
         'DRAGBUILD',
-        'SIZE8',
+        'SIZE6',
         'VISIBLETORECON',
         'RECLAIMABLE',
+        'SORTSTRATEGIC',
         'OVERLAYANTINAVY',
-        'SORTDEFENSE',
-        'CQUEMOV', --"CQUEMOV" enables the selection and move commands during construction
+        'OVERLAYDIRECTFIRE',
     },
     CollisionOffsetY = -1,
     Defense = {
@@ -84,7 +85,7 @@ UnitBlueprint {
             },
         },
         PlaceholderMeshName = 'UXB0000',
-        SpawnRandomRotation = false,
+        SpawnRandomRotation = true,
         Tarmacs = {
             {
                 Albedo = 'Tarmacs/Tar12x_aeon_01_albedo',
@@ -143,6 +144,7 @@ UnitBlueprint {
         UnitWeight = 1,
     },
     Intel = {
+        RadarRadius = 152,
         SonarRadius = 252,
         VisionRadius = 100,
         WaterVisionRadius = 100,
@@ -171,10 +173,10 @@ UnitBlueprint {
         MeshExtentsZ = 4,
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_None',
-        SkirtOffsetX = -0.5,
-        SkirtOffsetZ = -0.5,
-        SkirtSizeX = 6,
-        SkirtSizeZ = 6,
+        SkirtOffsetX = 0,
+        SkirtOffsetZ = 0,
+        SkirtSizeX = 4,
+        SkirtSizeZ = 4,
         TurnRate = 0,
     },
     SelectionSizeX = 3.1,
@@ -195,9 +197,7 @@ UnitBlueprint {
     },
     Weapon = {
         {
-			AutoInitiateAttackCommand = true,
             AboveWaterTargetsOnly = true,
-            AlwaysRecheckTarget = false,
             Audio = {
                 BarrelLoop = Sound {
                     Bank = 'UAS',
