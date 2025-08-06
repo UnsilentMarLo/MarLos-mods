@@ -41,7 +41,6 @@ KRB0205 = Class(CConstructionStructureUnit) {
         while self and not self.Dead do
             if ShouldDoReclaim() then
     			local posX, _, posZ = unpack(self.CachePosition)
-                local targetX, _, targetZ
 
                 for i, targ in GetReclaimablesInRect(posX - bp, posZ - bp, posX + bp, posZ + bp) do
                     if targ then
