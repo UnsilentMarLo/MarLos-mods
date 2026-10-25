@@ -1,17 +1,3 @@
-LICENSE STATUS: OWNER DECISION PENDING (see THIRD_PARTY.md)
-
-The MIT license below covers only what Marlo (UnsilentMarLo, also "Degulum" / "MarLo" in the mod files) wrote or created
-himself: the Lua code in `lua/` and `hook/` that is not derived from game files, the numeric changes and new fields in the
-blueprints, and any model or texture that is entirely his own work.
-
-It does NOT cover the many files that descend from Supreme Commander: Forged Alliance's game data (unit scripts and
-blueprints with "Copyright 2005 Gas Powered Games, Inc." headers, animations, base-game projectile models and the textures
-derived from them), from FAF's Lua, or from other authors (Mikko Tyster / Blade Braver code). Those keep their original
-terms, which do not allow redistribution under MIT. Which assets are original has not been established (THIRD_PARTY.md lists
-what is known); until then nobody should assume that the zip as a whole is MIT.
-
-------------------------------------------------------------------------------------------------------------------------
-
 MIT License
 
 Copyright (c) 2026 Marlo (UnsilentMarLo)

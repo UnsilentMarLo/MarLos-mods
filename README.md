@@ -4,9 +4,7 @@ A unit pack for **Supreme Commander: Forged Alliance** (FAF): around 65 new or r
 Seraphim; land, air, naval, structures; T1 to T4), their projectiles, effects and a sound bank. Some factions are
 unfinished. The units are made or edited from vanilla units. The mod also adds the new units to the AI's upgrade lists.
 
-Status: playable pack, maintained occasionally (mod version 160). Not balanced for ladder play. **Licensing is an open
-decision and the repository contains game-derived assets; read [THIRD_PARTY.md](THIRD_PARTY.md) before using or
-redistributing anything.**
+Status: playable pack, maintained occasionally (mod version 160). Not balanced for ladder play. Licensed under MIT; [THIRD_PARTY.md](THIRD_PARTY.md) records where parts of the mod come from.
 
 ## Install
 
@@ -51,5 +49,4 @@ tech level. Hook problems show up in the game log.
 ## Credits and license
 
 Units by Marlo (aka Degulum), based on the vanilla units of Gas Powered Games; the `KEB2305` script follows code by Mikko
-Tyster / Blade Braver. See [THIRD_PARTY.md](THIRD_PARTY.md) for what is known and what is open, and [LICENSE](LICENSE) for the
-restricted, pending MIT notice.
+Tyster / Blade Braver. See [THIRD_PARTY.md](THIRD_PARTY.md) for what is known and what is open, and [LICENSE](LICENSE) (MIT).

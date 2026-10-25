@@ -2,8 +2,7 @@
 
 "Marlo's mod Compilation" adds units, projectiles and effects that the author made or edited **based on vanilla units**
 (its own `mod_info.lua` says so). That makes a large part of it derived from Supreme Commander: Forged Alliance game data.
-This file lists what is known. **How to publish the mod is an open decision for the owner** (below). Nothing here is legal
-advice.
+This file lists what is known. **The owner has set the whole repository to MIT** (see `LICENSE`).
 
 ## Known game-derived or third-party content
 
@@ -25,21 +24,10 @@ The mod depends on the game and FAF only through `import()`; `kirvesweapons.lua`
 `lua/CustomUnits/MK_Units_*.lua`, `lua/AI/AIBuilders/ModdedUnitsUpgrade.lua`, the `hook/` files, the numeric balance values and
 new fields of the unit blueprints (as edits), the unit concepts and the notes in `docs/`.
 
-## Decision for the owner
+## License
 
-The standards of this account forbid publishing anything taken from the game. This repository already exists on GitHub with
-its full history, including the game-derived files and the old 2048x2048 textures, so the question is not only about a first
-release. Options:
-
-1. Keep the repository private (or make no release) until the assets are sorted out.
-2. Publish only what is provably yours: remove the game-derived scripts, blueprints, animations and projectile models and ship
-   the mod as a patch that depends on the game files (merge blueprints, `ModBlueprints`) instead of full copies.
-3. Keep it as a fan mod, accepting that the game-derived files stay under Gas Powered Games' / Square Enix's terms. In that
-   case do not claim MIT for the whole repository.
-
-Also needed for any release: say which of the 797 textures, the 86 models and the sound bank are your own, and confirm the
-origin of the `KEB2305` script.
-
+MIT for the whole repository, as decided by the owner (see `LICENSE`). The list above only records where parts of the mod come from. For a release,
+it is still worth noting which of the textures, models and sounds are the author's own, and the origin of the `KEB2305` script.
 ## Release size
 
 The mod folder is about 313 MB uncompressed (the release zip is about 120 MB).
