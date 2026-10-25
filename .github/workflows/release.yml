@@ -1,0 +1,19 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to build, e.g. v0.1.0 (the files are kept as a workflow artifact, no release is made)"
+        required: true
+
+jobs:
+  release:
+    uses: UnsilentMarLo/fa-patch-installer/.github/workflows/release-patch.yml@main
+    permissions:
+      contents: write
+    with:
+      version: ${{ github.event.inputs.version || github.ref_name }}
+      publish: ${{ startsWith(github.ref, 'refs/tags/') }}

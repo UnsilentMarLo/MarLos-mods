@@ -1,0 +1,8 @@
+{
+  "id": "marlos-mods",
+  "name": "Marlo's mod Compilation",
+  "guid": "A7D4F2B8-61C3-4E95-B0A7-2F8E6D1C5B93",
+  "kind": "lua",
+  "url": "https://github.com/UnsilentMarLo/MarLos-mods",
+  "mods": "mod"
+}
